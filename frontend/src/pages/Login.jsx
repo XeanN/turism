@@ -15,7 +15,7 @@ const Login = ()=> {
         password: undefined
     });
 
-    const {dispatch} = useContext(AuthContext)
+    const {dispatch} = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleChange = e => {
@@ -30,7 +30,8 @@ const Login = ()=> {
             const res = await fetch(`${BASE_URL}/auth/login`, {
                 method:'post',
                 headers:{
-                    'content-type': 'application/json'
+                    'content-type': 'application/json',
+                    
                 },
                 credentials: 'include',
                 body: JSON.stringify(credentials)

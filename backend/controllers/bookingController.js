@@ -33,6 +33,6 @@ export const getAllBooking = async(req, res)=> {
 
         res.status(200).json({success: true, message: "successful", data: books});
     } catch (error) {
-        res.status(500).json({ success: false, message: "internal server error"});
+        res.status(500).json({ success: false, message: "internal server error -getAllBooking"});
     };
 };

@@ -1,5 +1,6 @@
 import Tour from '../models/Tour.js';
 
+//Create  Tour
 export const createTour = async(req, res ) => {
     const newTour = new Tour(req.body)
 
@@ -11,7 +12,7 @@ export const createTour = async(req, res ) => {
         res.status(500).json({success:false, message:"Failed to create. Try again"});
     }
 };
-
+//Update Tour
 export const updateTour = async(req, res) => {
 
     const id = req.params.id
@@ -31,6 +32,8 @@ export const updateTour = async(req, res) => {
         });
     };
 };
+
+//Delete Tour
 export const deleteTour = async(req, res) => {
     const id = req.params.id;
     try {
@@ -47,6 +50,7 @@ export const deleteTour = async(req, res) => {
         })
     }
 }
+//singleTour
 export const getSingleTour = async(req, res) => {
     const id = req.params.id;
 

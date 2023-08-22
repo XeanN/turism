@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 
 export const verifyToken = (req, res, next) =>{
     const token= req.cookies.accessToken
-
+    console.log(req.cookies);
     if(!token){
         return res.status(401).json({ success: false, message: "You're not authorize - token"})
     }
@@ -14,25 +14,29 @@ export const verifyToken = (req, res, next) =>{
         }
         req.user = user
         next()
+
     })
 };
 
-export const verifyUser = (req, res, next)=> {
-    verifyToken(req, res, next, ()=>{
-        if(req.user.id === req.params.id || req.user.role === 'admin'){
-            next()
+export const verifyUser = (req, res, next) => {
+    verifyToken(req, res, next, () => {
+        if (req.user.id === req.params.id || req.user.role === 'admin') {
+            console.error(err.error);
+            next();
         } else {
-            return res.status(401).json({ success: false, message:"You're not authenticated - token"})
+            console.log(err.message);
+            return res.status(401).json({ success: false, message: "You're not authenticated - token" });
         }
-    })
-}
+    });
+};
+
 
 export const verifyAdmin = (req, res, next)=> {
-    verifyToken(req, res, next, ()=>{
-        if(req.user.role === 'admin'){
-            next()
+    verifyToken(req, res, next, () => {
+        if (req.user.role === 'admin') {
+          next();
         } else {
-            return res.status(401).json({ success: false, message:"You're not authorize"})
+          return res.status(401).json({ success: false, message: "You're not authorized - admin" });
         }
-    })
-}
+    });
+};

@@ -48,10 +48,31 @@ export const login = async(req, res) => {
         res.cookie('accessToken', token, {
             httpOnly: true,
             expires:token.expiresIn
-        }).status(200).json({token, data:{...rest}, role})
+        }).status(200).json({success:true, message:'successfully login - cookies', data:{...rest}})
 
     } catch (err) {
         console.error(error); // Agrega esta línea
         res.status(500).json({ success: false, message: "Failed to login" });
     }
+}
+
+/*
+TODO: VIENE EL TOKEN*/
+
+import jwt from 'jsonwebtoken';
+export const verifyToken = (req, res, next) =>{
+
+    const token = req.cookies.accessToken
+
+    if(!token){
+        return res.status(401).json({ success: false, message: "You're not authorize - token"})
+    }
+
+    jwt.verify(token, process.env.JWT_SECRET_KEY, (err, user)=> {
+        if(err){
+            return res.status(401).json({success :false ,message :"Invalid Token"})
+        }
+        req.user = user
+
+    })
 }
