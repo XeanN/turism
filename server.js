@@ -14,7 +14,7 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 8000;
 const corsOptions = {
-    origin: 'https://remarkable-mousse-eab5e6.netlify.app',
+    origin: 'https://turism-front.vercel.app/',
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     optionsSuccessStatus: 204
