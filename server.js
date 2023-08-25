@@ -14,7 +14,7 @@ dotenv.config();
 const app = express()
 const port = process.env.PORT || 8000;
 const corsOptions = {
-    origin: 'https://remarkable-mousse-eab5e6.netlify.app/',
+    origin: 'https://remarkable-mousse-eab5e6.netlify.app',
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     optionsSuccessStatus: 204
@@ -34,13 +34,8 @@ const connect = async()=> {
     }
 }
 //middleware
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://remarkable-mousse-eab5e6.netlify.app');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    next();
-})
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(cookieParser());
 
 app.use('/api/v1/auth', authRoute);
