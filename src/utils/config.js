@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://turismback-9ad60a126d39.herokuapp.com/api/v1'
+export const BASE_URL = 'https://turism-mce1heyaa-aponce-delycorppe.vercel.app/api/v1'
