@@ -13,12 +13,6 @@ dotenv.config();
 
 const app = express()
 const port = process.env.PORT || 8000;
-const corsOptions = {
-    origin: 'https://turism-front.vercel.app',
-    credentials: true,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    optionsSuccessStatus: 204
-};
 
 mongoose.set('strictQuery', false)
 const connect = async()=> {
@@ -27,13 +21,19 @@ const connect = async()=> {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-
+        
         console.log('Database connected');
     } catch (error) { 
         console.log(error);
     }
 }
 //middleware
+const corsOptions = {
+    origin: 'https://turism-front.vercel.app',
+    credentials: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    optionsSuccessStatus: 204
+};
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
