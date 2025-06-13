@@ -214,3 +214,9 @@ p span{
     border-radius: 4px;
     overflow: hidden;
 }
+.about-h3{
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    margin-top: 0;
+}

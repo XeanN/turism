@@ -58,7 +58,7 @@ const Home = ()=> {
                     </div>
                 </Col>
 
-                <SearchBar/>
+                 {/*<SearchBar/>*/}
             </Row>
         </Container>  
     </section>

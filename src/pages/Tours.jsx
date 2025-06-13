@@ -31,13 +31,13 @@ const Tours = ()=> {
     return (
         <>
             <CommonSection title={'All Tours'}/>
-            <section>
+             {/*<section>
                 <Container>
                     <Row>   
                         <SearchBar/>
                     </Row>
                 </Container>
-            </section>
+            </section>*/}
 
             <section className="pt-0">
                 <Container>
