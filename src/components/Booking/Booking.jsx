@@ -19,6 +19,7 @@ const Booking = ({ tour, avgRating }) => {
     phone: "",
     guestSize: 1,
     bookAt: "",
+
   });
 
   const handleChange = (e) => {
