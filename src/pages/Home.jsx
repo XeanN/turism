@@ -10,7 +10,7 @@ import experienceImg from '../assets/images/nuevoImage.jpg'
 
 import Subtitle from './../shared/Subtitle'
 
-import SearchBar from "../shared/SearchBar";
+//import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
