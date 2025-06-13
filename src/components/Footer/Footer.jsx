@@ -29,10 +29,10 @@ const quick__links=[
 ];
 
 const quick__links2=[
-    {
+    /*{
         path:'/gallery',
         display:'Gallery'
-    },
+    },*/
     {
         path:'/login',
         display:'Login'
@@ -54,7 +54,7 @@ const Footer = ()=> {
                     <div className="logo">
                         <img src={logo} alt="" />
                         <p>
-                          South American's Secrets  
+                          Turismo Nautico Paracas  
                         </p>
                         
                         <div className="social__links d-flex align-items-center gap-4">
@@ -118,7 +118,7 @@ const Footer = ()=> {
                                 <span><i class="ri-map-pin-line"></i></span>
                                 Address:
                             </h6>
-                            <p className="mb-0">El Chaco, Paracas 11550, Perú - Ica</p>
+                            <p className="mb-0">A.H.Alberto Tataje Muñoz Mz "C" Lote 2, Paracas, Peru</p>
                         </ListGroupItem>
 
                         <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">

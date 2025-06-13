@@ -6,7 +6,7 @@ import heroImg from '../assets/images/machu_picchu_main.png'
 import heroImg02 from '../assets/images/hero-img02.jpg'
 import heroVideo from '../assets/images/hero-video.mp4'
 import worldImg from '../assets/images/world.png'
-import experienceImg from '../assets/images/experience.png'
+import experienceImg from '../assets/images/nuevoImage.jpg'
 
 import Subtitle from './../shared/Subtitle'
 
@@ -94,11 +94,11 @@ const Home = ()=> {
             <Row>
                 <Col lg="6">
                     <div className="experience__content">
-                        <Subtitle subtitle={'Experience'}/>
+                        <Subtitle subtitle={'Sail With Us'}/>
 
                         <h2>With our all experience <br />we will serve you</h2>
                         <p>
-                            South Americans' Secrets is a company focused on tourism and
+                            Turismo Nautico Paracas is a company focused on tourism and
                             <br />
                             founded by expert guides of Peru.
                         </p>
