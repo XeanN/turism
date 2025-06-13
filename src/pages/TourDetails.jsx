@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState, useContext } from "react";
+import { Helmet } from "react-helmet";
 import "../styles/tour-details.css";
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
@@ -10,6 +11,40 @@ import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
 
+const tourSeoMeta = {
+  "FullDay Paracas and Huacachina": {
+    title: "FullDay Paracas and Huacachina - Aventura y Naturaleza",
+    description: "Explora Paracas e Ica en un día. Islas Ballestas, oasis de Huacachina, viñedos, historia y adrenalina en carros areneros desde Lima."
+  },
+  "Dune Buggy & Sandboard": {
+    title: "Dune Buggy & Sandboard - Aventura en las dunas de Ica",
+    description: "Disfruta de la emoción del sandboarding y un recorrido en buggy por las gigantescas dunas de Huacachina."
+  },
+  "Paracas National Reserve": {
+    title: "Reserva Nacional de Paracas - Naturaleza y Cultura",
+    description: "Conoce la biodiversidad marina y paisajes únicos del desierto costero peruano en esta reserva natural."
+  },
+  "Islas Ballestas": {
+    title: "Islas Ballestas - Fauna Marina Peruana",
+    description: "Navega a las Islas Ballestas para ver lobos marinos, pingüinos y aves exóticas en su hábitat natural."
+  },
+  "Private Tour": {
+    title: "Private Tour - Experiencia Personalizada",
+    description: "Vive una experiencia única y exclusiva con nuestros tours privados en Paracas, Ica o Nazca."
+  },
+  "Yacht Charter": {
+    title: "Yacht Charter en Paracas - Lujo y Libertad",
+    description: "Alquila un yate privado y navega por las aguas de Paracas con estilo, confort y privacidad total."
+  },
+  "Special Services": {
+    title: "Special Services - Eventos y Servicios a Medida",
+    description: "Ofrecemos tours corporativos, filmaciones, bodas y experiencias únicas personalizadas en el mar o desierto."
+  },
+  "Nazca Lines": {
+    title: "Nazca Lines - Misterios del Desierto",
+    description: "Vuela sobre las enigmáticas Líneas de Nazca y descubre uno de los mayores misterios de la antigüedad peruana."
+  }
+};
 const TourDetail = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef("");
@@ -74,8 +109,17 @@ const TourDetail = () => {
     window.scrollTo(0, 0);
   }, [tour]);
 
+  const seo = tourSeoMeta[title] || {
+    title: `${title} - Turismo en Paracas`,
+    description: `Descubre el tour "${title}" en Paracas, lleno de naturaleza y aventura.`
+  };
+
   return (
     <>
+      <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+      </Helmet>
       <section>
         <Container>
           {loading && <h4 className="text-center pt-5">Loading.......</h4>}

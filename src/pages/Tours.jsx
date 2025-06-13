@@ -18,12 +18,12 @@ const Tours = () => {
     data: tours,
     loading,
     error,
-  } = useFetch(`${BASE_URL}/tour/getAllTours?page=${page}`);
+  } = useFetch(`${BASE_URL}/tour/getAllTours?page=${page}&limit=12`);
   const { data: tourCount } = useFetch(`${BASE_URL}/tour/getTotalTours`);
 
   useEffect(() => {
     if (tourCount > 0) {
-      const pages = Math.ceil(tourCount / 8);
+      const pages = Math.ceil(tourCount / 12);
       setPageCount(pages);
     } else {
       setPageCount(0);

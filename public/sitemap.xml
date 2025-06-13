@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://turismonauticoparacas.com</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/full-day-paracas-and-huacachina</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/dune-buggy-and-sandboard</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/paracas-national-reserve</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/islas-ballestas</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/private-tour</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/yacht-charter</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/special-services</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/nazca-lines</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>
