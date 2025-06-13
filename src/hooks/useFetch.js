@@ -1,5 +1,4 @@
-// src/hooks/useFetch.js
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState([]);
@@ -11,32 +10,25 @@ const useFetch = (url) => {
       setLoading(true);
       try {
         const res = await fetch(url);
+        if (!res.ok) {
+          setError("failed to fetch");
+        }
+
         const result = await res.json();
-
-        if (!res.ok || result.success === false) {
-          throw new Error(result.message || 'Error del servidor');
-        }
-
-        if (Array.isArray(result.data)) {
-          setData(result.data);
-        } else if (typeof result.data === 'object') {
-          setData([result.data]); // importante para detalles
-        } else {
-          setData([]);
-        }
-
-        setError(null);
+        setData(result.data);
+        setLoading(false);
       } catch (err) {
         setError(err.message);
-        setData([]);
-      } finally {
         setLoading(false);
       }
     };
     fetchData();
   }, [url]);
-
-  return { data, loading, error };
+  return {
+    data,
+    error,
+    loading,
+  };
 };
 
 export default useFetch;
