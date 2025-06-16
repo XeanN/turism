@@ -20,6 +20,10 @@ const nav__links = [
     path: "/tours",
     display: "Tours",
   },
+  {
+    path: "/blogs",
+    display: "Blogs",
+  }
 ];
 
 const Header = () => {
@@ -63,7 +67,9 @@ const Header = () => {
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
             {/*==================logo================ */}
             <div className="logo">
-              <img src={logo} alt="" />
+              <Link to="/home">
+                <img src={logo} alt="logo" />
+              </Link>
             </div>
             {/*==================endLogo================ */}
             {/*==================menu Start================ */}

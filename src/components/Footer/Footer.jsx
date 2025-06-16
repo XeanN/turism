@@ -56,7 +56,9 @@ const Footer = () => {
         <Row>
           <Col lg="3">
             <div className="logo">
-              <img src={logo} alt="" />
+              <Link to="/home">
+                <img src={logo} alt="logo" />
+              </Link>
               <p>Turismo Nautico Paracas</p>
 
               <div className="social__links d-flex align-items-center gap-4 social-icons">
