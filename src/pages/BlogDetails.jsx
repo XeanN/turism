@@ -37,10 +37,7 @@ const BlogDetails = () => {
               <h3 className="blog__title mt-3">{blog.title}</h3>
               <p className="blog__summary">{blog.summary}</p>
               <p className="blog__body mt-4">
-               
-                Bienvenido a nuestro blog sobre {blog.title}. En este artículo te mostraremos los mejores lugares para visitar, consejos prácticos, datos históricos y más sobre esta experiencia en Paracas/Nazca/Ica. 
-                <br /><br />
-                Próximamente, se podrá integrar contenido dinámico desde una base de datos o CMS.
+                {blog.content}
               </p>
             </Col>
           </Row>

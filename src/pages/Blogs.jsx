@@ -1,14 +1,15 @@
 import React from "react";
 import CommonSection from "../shared/CommonSection";
 import { Container, Row, Col } from "reactstrap";
-import Newsletter from "../shared/Newsletter";
-import { blogs } from "../assets/data/blogs";
 import BlogCard from "../components/Blogs/BlogCard";
+import { blogs } from "../assets/data/blogs";
+import "../styles/blogs.css";
+import Newsletter from "../shared/Newsletter";
 
 const Blogs = () => {
   return (
     <>
-      <CommonSection title="Latest Blog Posts" />
+      <CommonSection title="Our travel blogs" />
       <section>
         <Container>
           <Row>

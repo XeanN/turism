@@ -2,131 +2,198 @@ export const blogs = [
   {
     id: 1,
     title: "Qué ver en Paracas en un solo día (y no perderte nada)",
-    summary: "Descubre los imperdibles de Paracas en una escapada de 24 horas: Islas Ballestas, Reserva Nacional y más.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Guías, Naturaleza, Viajes",
-    image: "/tour-images/paracas-dia.jpg",
-    slug: "que-ver-en-paracas-en-un-dia"
+    summary: "Descubre los lugares imperdibles de Paracas en 24 horas: Islas Ballestas, Reserva Nacional, Huacachina, viñedos y más.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Guías, Tours, Paracas",
+    image: "/tour-images/paracas-full-day.jpg",
+    slug: "que-ver-en-paracas-en-un-dia",
+    content: `
+Paracas te ofrece un recorrido completo en un solo día:
+
+✅ Empieza con las Islas Ballestas donde verás lobos marinos, pingüinos de Humboldt y el famoso geoglifo El Candelabro.
+
+✅ Luego explora la Reserva Nacional de Paracas, con sus playas rojas, miradores impresionantes y biodiversidad marina única.
+
+✅ Finalmente, si deseas extender tu aventura, puedes visitar los viñedos de Ica y el oasis de Huacachina para practicar sandboarding y pasear en buggy.
+
+🎯 Consejos prácticos: Lleva bloqueador, lentes, ropa ligera, cámara y prepárate para una experiencia que mezcla naturaleza, historia y aventura.
+    `
   },
+
   {
     id: 2,
-    title: "La mejor ruta para combinar Paracas, Ica y Nazca en 3 días",
-    summary: "Aprovecha tu viaje al máximo con este itinerario ideal para explorar Paracas, Ica y Nazca en solo 3 días.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Rutas, Experiencias, Aventura",
-    image: "/tour-images/paracas-ica-nazca.jpg",
-    slug: "ruta-paracas-ica-nazca-3-dias"
+    title: "Aventura en el Desierto: Sandboarding y Buggy en Paracas",
+    summary: "Vive la adrenalina del sandboarding y el paseo en buggy siguiendo la ruta Dakar sobre las dunas de Paracas.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Aventura, Naturaleza, Paracas",
+    image: "/tour-images/sandboard-dakar.jpg",
+    slug: "sandboarding-y-buggy-en-paracas",
+    content: `
+En el desierto de Paracas disfrutarás pura adrenalina:
+
+🚙 Súbete a un buggy profesional para recorrer la ruta del Dakar 2013, con subidas vertiginosas y descensos de infarto sobre las dunas gigantes.
+
+🏂 Luego practica sandboarding: deslizamiento en tablas por las dunas, ya sea parado o acostado.
+
+💡 Recomendaciones: ropa deportiva cómoda, bloqueador solar, gafas de sol, agua y espíritu aventurero.
+
+Una de las actividades más emocionantes del desierto peruano, perfecta para los amantes de la adrenalina y los paisajes desérticos.
+    `
   },
+
   {
     id: 3,
-    title: "Guía definitiva para visitar las Islas Ballestas",
-    summary: "Conoce cómo llegar, qué ver y cuándo ir a este paraíso natural lleno de fauna marina.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Naturaleza, Fauna, Paracas",
-    image: "/tour-images/islas-ballestas.jpg",
-    slug: "guia-islas-ballestas"
+    title: "Reserva Nacional de Paracas: Guía completa para tu visita",
+    summary: "Explora playas rojas, miradores geológicos y descubre la biodiversidad marina de la Reserva Nacional de Paracas.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Naturaleza, Reserva, Paracas",
+    image: "/tour-images/reserva-paracas.jpg",
+    slug: "reserva-nacional-de-paracas",
+    content: `
+La Reserva Nacional de Paracas es única en Perú:
+
+🌊 Con más de 224 especies de aves, 180 tipos de peces y 20 especies de mamíferos marinos.
+
+📍 Destacan playas como La Mina, Playa Roja, Yumaque y los espectaculares acantilados del mirador La Catedral.
+
+🏛 Además, la zona alberga restos arqueológicos de la Cultura Paracas y es considerada Sitio Ramsar por su importancia ecológica.
+
+🎯 No olvides llevar protección solar, lentes, gorra, ropa cómoda, agua y cámara para capturar los paisajes.
+    `
   },
+
   {
     id: 4,
-    title: "¿Vale la pena sobrevolar las Líneas de Nazca? Nuestra experiencia",
-    summary: "Explora con nosotros si este icónico vuelo cumple las expectativas. Spoiler: sí, y te contamos por qué.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Misterios, Historia, Aventura",
-    image: "/tour-images/lineas-nazca-vuelo.jpg",
-    slug: "vale-la-pena-sobrevolar-lineas-nazca"
+    title: "Todo lo que debes saber antes de visitar las Islas Ballestas",
+    summary: "Consejos, horarios y lo que puedes ver: pingüinos, lobos marinos, aves marinas y el famoso geoglifo Candelabro.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Naturaleza, Vida marina, Paracas",
+    image: "/tour-images/islas-ballestas.jpg",
+    slug: "islas-ballestas-paracas",
+    content: `
+Las Islas Ballestas son conocidas como las Galápagos peruanas:
+
+🦭 Podrás ver lobos marinos, pingüinos de Humboldt, piqueros, pelícanos y zarcillos.
+
+⛵ Los tours salen temprano en la mañana (entre 8 y 10 am) para aprovechar el clima y la actividad de los animales.
+
+✨ El tour inicia mostrando el Candelabro, un enigmático geoglifo tallado sobre la arena hace siglos.
+
+💡 Lleva bloqueador, chaqueta ligera (por la brisa), cámara y reserva tu tour con anticipación.
+    `
   },
+
   {
     id: 5,
-    title: "Descubre la fauna marina de Paracas: pingüinos, lobos y más",
-    summary: "Te contamos qué especies puedes ver y dónde encontrarlas durante tu viaje a Paracas.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Fauna, Naturaleza, Paracas",
-    image: "/tour-images/fauna-paracas.jpg",
-    slug: "fauna-marina-paracas"
+    title: "Tour privado en Paracas: exclusividad a tu medida",
+    summary: "Disfruta de un tour privado completamente personalizado para explorar Paracas en familia o grupos privados.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "VIP, Privado, Paracas",
+    image: "/tour-images/private-tour.jpg",
+    slug: "tour-privado-en-paracas",
+    content: `
+Nuestro tour privado en Paracas es ideal si buscas:
+
+🚤 Salidas personalizadas solo para tu grupo familiar, amigos o evento corporativo.
+
+🎯 Puedes diseñar tu itinerario: visitar las Islas Ballestas, la Reserva, navegar tranquilamente o realizar sesiones de fotografía.
+
+🧭 Horarios flexibles, comodidad máxima y guías dedicados exclusivamente para ustedes.
+
+Ideal para aniversarios, propuestas, cumpleaños o sesiones fotográficas privadas en los paisajes más hermosos de Paracas.
+    `
   },
+
   {
     id: 6,
-    title: "Sandboarding y buggy en Huacachina: adrenalina en el desierto de Ica",
-    summary: "Siente la velocidad y emoción en las dunas de Huacachina, una aventura que no olvidarás.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Aventura, Ica, Desierto",
-    image: "/tour-images/huacachina.jpg",
-    slug: "sandboarding-buggy-huacachina"
+    title: "Charter de Yate en Paracas: Lujo y libertad en el mar",
+    summary: "Navega en tu propio yate con itinerario personalizado, ideal para grupos, eventos o fotografía en Paracas.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Lujo, Mar, Paracas",
+    image: "/tour-images/yacht-charter.jpg",
+    slug: "yacht-charter-en-paracas",
+    content: `
+Alquila tu propio yate en Paracas:
+
+🛥 Diseña tu ruta personalizada: Islas Ballestas, playas secretas, navegación relajante, eventos privados o fotografía marina.
+
+🎯 Capacidad para 29 personas, tripulación profesional, permisos rápidos para zonas protegidas y lujo total.
+
+🎂 Perfecto para celebraciones exclusivas, bodas, filmaciones, o simplemente para disfrutar el mar peruano en total libertad.
+
+Consulta opciones de catering, fotografía profesional, o rutas especiales de avistamiento de fauna marina.
+    `
   },
+
   {
     id: 7,
-    title: "Las mejores playas escondidas de la Reserva de Paracas",
-    summary: "Redescubre la costa con esta guía de playas vírgenes y poco exploradas de Paracas.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Playas, Paracas, Naturaleza",
-    image: "/tour-images/playas-paracas.jpg",
-    slug: "playas-escondidas-paracas"
+    title: "Servicios Especiales en Paracas: expediciones científicas y filmaciones",
+    summary: "Asistencia logística especializada para investigaciones, filmaciones o trabajos ambientales en Paracas.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Ciencia, Filmación, Paracas",
+    image: "/tour-images/special-services.jpg",
+    slug: "servicios-especiales-paracas",
+    content: `
+Si tu proyecto requiere:
+
+🎥 Filmación de documentales, publicidad o producciones en Paracas.
+
+🔬 Investigaciones científicas, monitoreo de fauna o expediciones ambientales.
+
+📋 Nos encargamos de gestionar los permisos oficiales SERNANP, coordinar la logística marina, asistencia en terreno y transporte de personal y equipos.
+
+Garantizamos cumplimiento de protocolos, respeto ambiental y el máximo profesionalismo en este ecosistema protegido.
+    `
   },
+
   {
     id: 8,
-    title: "El misterio del Candelabro de Paracas: leyendas y teorías",
-    summary: "Explora los posibles significados detrás de esta enigmática figura en el desierto costero.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Cultura, Misterios, Historia",
-    image: "/tour-images/candelabro-paracas.jpg",
-    slug: "misterio-candelabro-paracas"
+    title: "Sobrevolar las Líneas de Nazca desde Paracas: ¿vale la pena?",
+    summary: "Vive la experiencia de sobrevolar las enigmáticas Líneas de Nazca partiendo cómodamente desde Paracas.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Historia, Nazca, Cultura",
+    image: "/tour-images/nazca-flight.jpg",
+    slug: "lineas-de-nazca-desde-paracas",
+    content: `
+Una experiencia única desde Paracas:
+
+✈ Desde el aeropuerto de Pisco puedes sobrevolar las misteriosas Líneas de Nazca sin tener que viajar a Nazca.
+
+🛩 Durante 1 hora verás las figuras como el colibrí, el astronauta, el mono y el perro.
+
+📸 Los vuelos cuentan con pilotos bilingües, asientos garantizados en ventana y asistencia desde tu hotel.
+
+💡 Recomendación: Evita comer pesado antes del vuelo y lleva tu pasaporte o DNI.
+    `
   },
+
   {
     id: 9,
-    title: "Líneas de Nazca: las figuras más impresionantes desde el aire",
-    summary: "Estas son las formas que más nos impactaron durante el vuelo sobre las Líneas de Nazca.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Nazca, Cultura, Historia",
-    image: "/tour-images/lineas-nazca-aereo.jpg",
-    slug: "figuras-impresionantes-lineas-nazca"
-  },
-  {
-    id: 10,
-    title: "Museo de Paracas: lo que debes saber antes de ir",
-    summary: "Descubre las momias, tejidos y restos arqueológicos más fascinantes de esta civilización.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Museo, Cultura, Paracas",
-    image: "/tour-images/museo-paracas.jpg",
-    slug: "museo-de-paracas"
-  },
-  {
-    id: 11,
-    title: "10 cosas que debes llevar si viajas a Paracas",
-    summary: "No olvides nada con esta lista de esenciales para disfrutar sin contratiempos tu viaje.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Consejos, Paracas, Prácticos",
-    image: "/tour-images/equipaje-paracas.jpg",
-    slug: "que-llevar-a-paracas"
-  },
-  {
-    id: 12,
-    title: "Mejores horas para visitar las Islas Ballestas y evitar el sol fuerte",
-    summary: "Evita el calor extremo y ten mejores vistas eligiendo los horarios correctos.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Tips, Fauna, Naturaleza",
-    image: "/tour-images/ballestas-horarios.jpg",
-    slug: "horario-visita-ballestas"
-  },
-  {
-    id: 13,
-    title: "Cómo llegar a Paracas desde Lima sin complicaciones",
-    summary: "Todas las opciones: bus, auto o tour privado. Compara precios y elige tu mejor forma de viajar.",
-    date: "June 16, 2025",
-    author: "Julio C. Tello",
-    category: "Transporte, Paracas, Guía",
-    image: "/tour-images/llegar-paracas.jpg",
-    slug: "como-llegar-a-paracas"
+    title: "Fauna Marina de Paracas: Humboldt Penguins, Lobos Marinos y más",
+    summary: "Admira la increíble vida marina de Paracas en un tour único por el Pacífico peruano.",
+    date: "June 20, 2025",
+    author: "Equipo TurismoNauticoParacas",
+    category: "Vida Marina, Fauna, Paracas",
+    image: "/tour-images/fauna-marina.jpg",
+    slug: "fauna-marina-paracas",
+    content: `
+Paracas es un santuario de vida marina:
+
+🦭 Verás de cerca colonias de lobos marinos, pingüinos de Humboldt, piqueros, pelícanos, gaviotas y hasta delfines ocasionalmente.
+
+📅 El mejor horario para el tour es temprano (8 a 10 am) cuando la fauna está más activa.
+
+🌿 Esta área está protegida, permitiendo avistamientos responsables, educativos y respetuosos del ecosistema marino.
+
+🌊 Perfecto para familias, fotógrafos y amantes de la naturaleza.
+    `
   }
 ];
