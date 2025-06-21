@@ -1,16 +1,17 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
+//import React, { useState, useContext } from "react";
 import "./booking.css";
 import { Form, FormGroup, ListGroup, ListGroupItem, Button } from "reactstrap";
 
 //import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../context/AuthContext";
+//import { AuthContext } from "../../context/AuthContext";
 import { BASE_URL } from "../../utils/config";
 
 const Booking = ({ tour, avgRating }) => {
   const { id, price, reviews } = tour;
   //const navigate = useNavigate();
 
-  const { user } = useContext(AuthContext);
+  //const { user } = useContext(AuthContext);
 
   const [booking, setBooking] = useState({
     idtour: id,
