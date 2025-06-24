@@ -67,3 +67,17 @@
 .blog__btn:hover {
   background-color: #005f86;
 }
+
+.blog__btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;   /* importante */
+  margin: 1rem auto 0 auto; /* centra horizontalmente */
+  width: fit-content; /* solo ocupa el ancho necesario */
+}
+.blog__btn:hover {
+  background-color: #005f86;
+}

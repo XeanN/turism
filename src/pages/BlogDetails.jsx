@@ -22,15 +22,15 @@ const BlogDetails = () => {
   const blog = blogs.find((item) => item.slug === slug);
 
   const blogContentMap = {
-    "que-ver-en-paracas-en-un-dia": <Blog1 />,
-    "sandboarding-y-buggy-en-paracas": <Blog2 />,
-    "reserva-nacional-de-paracas": <Blog3 />,
-    "islas-ballestas-paracas": <Blog4 />,
-    "tour-privado-en-paracas": <Blog5 />,
-    "yacht-charter-en-paracas": <Blog6 />,
-    "servicios-especiales-paracas": <Blog7 />,
-    "lineas-de-nazca-desde-paracas": <Blog8 />,
-    "fauna-marina-paracas": <Blog9 />,
+    "what-to-see-in-paracas-in-one-day": <Blog1 />,
+    "sandboarding-and-buggy-in-paracas": <Blog2 />,
+    "paracas-national-reserve": <Blog3 />,
+    "ballestas-islands-paracas": <Blog4 />,
+    "private-tour-in-paracas": <Blog5 />,
+    "yacht-charter-in-paracas": <Blog6 />,
+    "special-services-in-paracas": <Blog7 />,
+    "nazca-lines-from-paracas": <Blog8 />,
+    "marine-fauna-in-paracas": <Blog9 />,
   };
 
   if (!blog) {
