@@ -6,7 +6,7 @@ import { BASE_URL } from "../utils/config";
 import "./tour-card.css";
 
 const TourCard = ({ tour }) => {
-  const { id, title, city, photo, price, featured, reviews } = tour;
+  const { id, title, city, photo, price, featured, reviews, pricingType } = tour;
   const imagePath = BASE_URL + photo;
   const { totalRating, avgRating } = calculateAvgRating(reviews);
 
@@ -40,7 +40,7 @@ const TourCard = ({ tour }) => {
 
           <div className="card__bottom d-flex align-items-center justify-content-between mt-3">
             <h5>
-              ${price} <span>/per person</span>
+              ${price} <span>/{pricingType}</span>
             </h5>
 
             <button className="btn booking__btn">

@@ -61,6 +61,7 @@ const TourDetail = () => {
     desc,
     informacion,
     price,
+    pricingType,
     reviews,
     city,
     distance,
@@ -157,8 +158,7 @@ const TourDetail = () => {
                         <i className="ri-map-pin-2-line"></i> {city}
                       </span>
                       <span>
-                        <i className="ri-money-dollar-circle-line"></i> ${price}{" "}
-                        / per person
+                        <i className="ri-money-dollar-circle-line"></i> ${price} {pricingType ? `/ ${pricingType}` : ""}
                       </span>
                       <span>
                         <i className="ri-map-pin-time-line"></i> {distance} k/m
