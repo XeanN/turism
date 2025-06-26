@@ -1,5 +1,3 @@
-// Blog11.jsx (Fully Extended with Sectioned Layout, Deep Narrative, Images, and FAQ)
-
 import React from "react";
 import "../../styles/montesierpe.css";
 
