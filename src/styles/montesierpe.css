@@ -25,3 +25,73 @@
   font-size: 0.95rem;
   color: #555;
 }
+
+
+
+.section-with-image {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.side-image {
+  max-width: 250px;
+  height: auto;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.text-and-quote {
+  flex: 1;
+}
+
+.highlighted-quote {
+  background-color: #fff3cd;
+  padding: 1rem;
+  border-left: 5px solid #ffa500;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 1rem;
+}
+.blog-section {
+  overflow: auto;
+  margin-bottom: 2rem;
+}
+
+.float-image {
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  width: 250px; /* o el ancho que desees */
+  height: auto;
+  border-radius: 5px;
+}
+
+.intro-paragraph {
+  overflow: hidden; /* fuerza que contenga flotantes */
+  margin-top: 2rem;
+}
+
+.image-left {
+  float: left;
+  width: 300px;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.quote-box {
+  float: right;
+  background-color: #fff3cd;
+  border-left: 5px solid #ffa500;
+  padding: 1rem;
+  font-style: italic;
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 260px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
