@@ -1,0 +1,27 @@
+.section-horizontal {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.blog-image {
+  width: 300px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.content-box {
+  flex: 1;
+}
+
+.quote-block {
+  background-color: #fff3cd;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #ffa500;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+}

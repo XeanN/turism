@@ -96,5 +96,27 @@ export const blogs = [
     category: "Marine Life, Fauna, Paracas",
     image: "/tour-images/Paracas/fauna-marina.jpg",
     slug: "marine-fauna-in-paracas",
+  },
+  {
+    id: 10,
+    title: "Flying Over the Nazca Lines from Pisco: Save Time and Enjoy More",
+    summary: "Discover a faster way to explore the mysterious Nazca Lines by flying directly from Pisco, avoiding long road trips from Lima or Nazca.",
+    date: "June 26, 2025",
+    author: "Team TurismoNauticoParacas",
+    category: "Nazca, Flights, Culture",
+    image: "/tour-images/Paracas/nazca-lines-pisco.jpg",
+    slug: "nazca-lines-from-pisco"
+  },
+  {
+    id: 11,
+    title: "The Enigma of Mount Sierpe",
+    date: "2014-04-20",
+    author: "Rein Petersen",
+    category: "History and Culture",
+    summary: "Discover the mysteries of Mount Sierpe and its geoglyph known as the 'Avenue of Holes.' A pre-Incan legacy linked to rain rituals, ancestral deities, and possible messages to the gods.",
+    image: "/tour-images/Paracas/montesierpe.jpg",
+    slug: "montesierpe"
   }
+
+
 ];

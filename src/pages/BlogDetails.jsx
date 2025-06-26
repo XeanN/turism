@@ -16,6 +16,8 @@ import Blog6 from "../pages/blogs/Yacht-charter-en-paracas";
 import Blog7 from "../pages/blogs/Servicios-especiales-paracas";
 import Blog8 from "../pages/blogs/Lineas-de-nazca-desde-paracas";
 import Blog9 from "../pages/blogs/Fauna-marina-paracas";
+import Blog10 from "../pages/blogs/Sobrevolando-las-líneas-de-Nazca-desde-Pisco";
+import Blog11 from "../pages/blogs/Montesierpe";
 
 const BlogDetails = () => {
   const { slug } = useParams();
@@ -31,6 +33,9 @@ const BlogDetails = () => {
     "special-services-in-paracas": <Blog7 />,
     "nazca-lines-from-paracas": <Blog8 />,
     "marine-fauna-in-paracas": <Blog9 />,
+    "nazca-lines-from-pisco": <Blog10 />,
+    "montesierpe": <Blog11 />
+
   };
 
   if (!blog) {
