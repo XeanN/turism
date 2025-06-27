@@ -116,6 +116,16 @@ export const blogs = [
     summary: "Discover the mysteries of Mount Sierpe and its geoglyph known as the 'Avenue of Holes.' A pre-Incan legacy linked to rain rituals, ancestral deities, and possible messages to the gods.",
     image: "/tour-images/Paracas/montesierpe.jpg",
     slug: "montesierpe"
+  },
+  {
+    id: 12,
+    title: "Guano Collectors",
+    date: "2014-02-22",
+    author: "Rein Petersen",
+    category: "History and Culture",
+    summary: "The worst enemy is not the smell, heat or exhaustion. As Domingo León explained to us, the worst enemy is dust sticking on the eyebrows, covering our noses and cheeks and turning our face into a rigid mask.",
+    image: "/tour-images/Paracas/guano_collectors.jpg",
+    slug: "guano-collectors"
   }
 
 
