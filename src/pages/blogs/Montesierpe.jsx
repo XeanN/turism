@@ -57,11 +57,14 @@ const Blog11 = () => {
                 <em>“The town [Monte Sierpe] was destroyed by the earthquake, not a single building was left standing”</em>
             </div>
 
-            <p>
-                Backtracking our route from Tambo Colorado just a few minutes we arrive to Monte Sierpe we find a small town rocked by earthquake in 2007. “The town was destroyed by the earthquake, not a single building was left standing” explains Lucio as he points out the town's former church, partially erect and invoking the strangest of feelings within us.
+            <p >
+                Backtracking our route from Tambo Colorado, just a few minutes away, we arrive at the ghostly remains of Monte Sierpe — a once-vibrant town now eerily silent. The town was rocked by a powerful earthquake in 2007, reducing nearly all its structures to rubble. “The town was destroyed by the earthquake, not a single building was left standing,” explains Lucio as he points toward what’s left of the town’s church — a cracked bell tower stubbornly standing amid collapsed walls, defying time and tragedy.
+                <br />
+                Walking through the debris-laden streets, a somber atmosphere surrounds us. It’s hard not to feel a deep sense of loss — not only of architecture but of community, culture, and memory. Nature has slowly begun to reclaim parts of the village, with plants creeping through cracks and wind whistling through broken windows. Yet, despite the destruction, Monte Sierpe retains a strange kind of beauty, as if frozen in time to remind us of both resilience and fragility.
+                <br />
+                Lucio points out that Monte Sierpe was once a key settlement near the Pisco River, inhabited by people with strong ties to the surrounding landscape. The earthquake not only reshaped the physical space but also transformed the way the locals relate to it. “It’s a sacred place now,” he says. “A site of memory and reflection.”
             </p>    
         </div>
-
 
         <div className="intro-paragraph">
             <img src="/tour-images/Paracas/monte_sierpe_1_t.jpg" alt="Monte Sierpe" className="image-left" />
@@ -91,9 +94,15 @@ const Blog11 = () => {
             </div>
 
             <p>
-                “With thousands and thousands of such ritual sites our government is forced to choose which can be preserved and which cannot - this is why it is vital that we reveal this enigma's true significance. You can still find artifacts like pottery and other unusual items but already so much archaeological information has been looted, please let us leave what remains in their place”.
+                “With thousands and thousands of such ritual sites, our government is forced to choose which can be preserved and which cannot. This is why it is vital that we reveal this enigma's true significance. You can still find artifacts like pottery and other unusual items, but already so much archaeological information has been looted. Please, let us leave what remains in its place,” pleads Lucio, his voice echoing over the dry wind as we descend into one of the enigmatic troughs.
                 <br />
-                Respectfully we regard Lucio's plea and resist the urge to make souvenirs of artefacts we find like the child's jaw bone and what appears to be a female adult skull. We press on along a ridge between two valleys following these strange holes, every once-in-a-while stopping to observe their construction. We find they range in diameter around one meter and a depth of 80cm on average. They are lined with rocks carefully stacked such that they have lasted the ages.
+                Respectfully, we heed his plea. The temptation is real — we come across fragments of ancient pottery, obsidian chips, and even more striking: the tiny jawbone of a child, followed by what appears to be part of an adult female skull. These discoveries are haunting, yet they emphasize the sacredness of the site and the responsibility we hold.
+                <br />
+                We continue along a narrow ridge between two valleys, our eyes scanning the geometric patterns of the holes below us. Every few meters we stop, crouch, and observe. The formations are hypnotic — perfect circles stretching into the horizon like an ancient code etched into the Earth. The holes are approximately one meter in diameter and reach a depth of around 80 centimeters. What is most surprising is their construction: each one lined with stones carefully arranged, as if to preserve their shape for eternity.
+                <br />
+                The silence is almost ceremonial, interrupted only by the crunch of gravel under our boots. One cannot help but wonder: were these graves, storage pits, astronomical markers, or ritual sites? Lucio believes they may have served multiple purposes across generations, their meaning evolving with time.
+                <br />
+                As we move forward, the scale of the site becomes apparent. There are hundreds, possibly thousands, of these openings across the landscape. “This is not a random occurrence,” Lucio whispers. “Someone wanted to be remembered.”
             </p>
         </div>
 
@@ -132,9 +141,15 @@ const Blog11 = () => {
                 </em>
             </div>
             <p>
-                The view is spectacular, amongst the other mountain peaks we survey the valley and the enormity of the serpent's long body. It is the time for repose and we imagine ourselves standing in the same place where ancients once stood contemplating their monument they had built with their own hands.
+                The view is absolutely spectacular. From this elevated vantage point, surrounded by jagged mountain peaks and soft golden hills, we gaze down upon the valley below. Serpentine patterns stretch across the earth, winding with purpose and precision — a monumental geoglyph whose magnitude only becomes clear from above.
                 <br />
-                It is here that Lucio fills in some of the pieces of the puzzle for us: "I believe that what appears to be a serpent is actually the ancient deity Q'hoa. He was the servant or acolyte of the god of water known as Illapa and his likeness was used in a majority of rituals regarding rain”.
+                Silence falls over our group. It is a moment of repose, of shared reverence. We find ourselves standing exactly where the ancients must have once stood, staring at their creation, marveling at its power and scale. The sun casts long shadows across the terrain, accentuating the curves of the formation. For a moment, it almost seems to move — to slither, alive, through the landscape.
+                <br />
+                Lucio breaks the silence with a solemn tone. “I believe that what appears to be a serpent is actually the ancient deity Q’hoa,” he says, pointing along the undulating body of the geoglyph. “He was the servant or acolyte of the god of water, known as Illapa. His likeness was used in many rituals to call upon the rains.”
+                <br />
+                Suddenly, everything begins to make sense. The scale, the direction, the effort — it was not just a marker or a signal. It was a prayer carved into the earth. A tribute to the forces that governed life in the desert. A plea for survival, written in a language of stone.
+                <br />
+                We begin to see with new eyes. The Avenida de los Hoyos is no longer a mystery of holes — it is the body of a god, winding its way between mountains and centuries, still watching over the land it once nourished.
             </p>
         </div>
 
@@ -220,28 +235,28 @@ const Blog11 = () => {
         <h2>Frequently Asked Questions (FAQ)</h2>
 
         <h3>📍 Where is Monte Sierpe located?</h3>
-        <p>It’s near the town of Humay, in the Pisco Valley, accessible via private tour or guide from Paracas.</p>
+        <p>Monte Sierpe lies near the town of Humay, in Peru’s Pisco Valley. It is accessible via private tours or guided excursions from Paracas.</p>
 
         <h3>🕳️ How many holes exist on site?</h3>
-        <p>Over 6,000 individual holes, lined across nearly 1.5 kilometers of ridge.</p>
+        <p>There are over 6,000 meticulously arranged holes stretching across nearly 1.5 kilometers of desert ridge — a feat of ancient engineering.</p>
 
         <h3>🧭 How can I get there?</h3>
-        <p>Private transport from Paracas or Pisco to Humay, then a hike. Some specialized agencies offer guided tours.</p>
+        <p>Most visitors depart from Paracas or Pisco by private transport toward Humay. From there, it requires a short hike. Several agencies offer guided, culturally enriched tours.</p>
 
         <h3>⚠️ Is the site protected?</h3>
-        <p>There’s no formal UNESCO designation yet, although local initiatives and researchers advocate for preservation.</p>
+        <p>While not formally designated by UNESCO, Monte Sierpe is the subject of ongoing preservation efforts by local researchers and cultural organizations.</p>
 
         <h3>🔍 What’s the purpose of the holes?</h3>
-        <p>Theories vary: funerary practices, food storage, spiritual offerings, or astronomical significance.</p>
+        <p>Their origin remains a mystery. Hypotheses range from burial grounds and food storage to spiritual altars or even astronomical calendars aligned with Andean cosmology.</p>
 
         <h3>⛏️ Is excavation allowed?</h3>
-        <p>Only limited academic research is permitted. Visitors are urged not to disturb any part of the site.</p>
+        <p>Only authorized academic teams may conduct research. Visitors are urged to respect the site and avoid removing or disturbing any elements.</p>
 
         <h3>🌌 Can I see the full serpent shape?</h3>
-        <p>Only from the air or from key vantage points along the ridge. Guides help interpret its form based on ancient myths.</p>
+        <p>Yes — but only from above or from select ridgeline vantage points. Local guides help interpret its serpentine form, believed by some to represent the deity Q’hoa.</p>
 
         <h3>📸 Is photography allowed?</h3>
-        <p>Yes, but respectfully. Drones may require permits from SERNANP or local municipalities.</p>
+        <p>Photography is welcome, as long as it is done respectfully. Drone use may require permits from SERNANP or the local municipality.</p>
     </div>
   );
 };
