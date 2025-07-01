@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/home.css";
 
 import { Container, Row, Col } from "reactstrap";
@@ -7,8 +7,10 @@ import { Container, Row, Col } from "reactstrap";
 //import heroVideo from "../assets/images/hero-video.mp4";
 //import worldImg from "../assets/images/world.png";
 import experienceImg from "../assets/images/nuevoImage.jpg";
-import heroVideo2 from "../assets/images/yates.mp4";
-
+//import heroVideo2 from "../assets/images/yates.mp4";
+import slader1 from "../assets/images/slader1_1268x738.jpg";
+import slader2 from "../assets/images/slader2_1268x738.jpg";
+import slader3 from "../assets/images/slader3_1268x738.jpg";
 import Subtitle from "./../shared/Subtitle";
 
 //import SearchBar from "../shared/SearchBar";
@@ -19,13 +21,49 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Newsletter from "../shared/Newsletter";
 
 const Home = () => {
+  const sliderImages = [slader1, slader2, slader3];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [sliderImages.length]);
+
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+  };
+
   return (
     <>
       {/* ================hero section start==================== */}
       <section className="home-home">
-        <div className="overlay"></div>
-        <video src={heroVideo2} muted autoPlay loop type="video/mp4"></video>
-
+        {/*<div className="overlay"></div>{/*
+        {/*<video src={heroVideo2} muted autoPlay loop type="video/mp4"></video>*/}
+        <div className="slider-container">
+          <div
+            className="slider"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {sliderImages.map((img, idx) => (
+              <img src={img} alt={`Slide ${idx}`} key={idx} />
+            ))}
+          </div>
+          {/* ✅ Indicadores de burbujas */}
+          <div className="slider-dots">
+            {sliderImages.map((_, index) => (
+              <span
+                key={index}
+                className={`dot ${index === currentIndex ? "active" : ""}`}
+                onClick={() => handleDotClick(index)}
+              ></span>
+            ))}
+          </div>
+        </div>
         <div className="homeContent container">
           <div className="textDiv">
             <span className="smallText">
