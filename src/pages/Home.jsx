@@ -12,7 +12,7 @@ import heroVideo2 from "../assets/images/yates.mp4";
 import Subtitle from "./../shared/Subtitle";
 
 //import SearchBar from "../shared/SearchBar";
-import ServiceList from "../services/ServiceList";
+//import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
 import Testimonial from "../components/Testimonial/Testimonial";
@@ -81,7 +81,7 @@ const Home = () => {
         </Container>
       </section> */}
       {/* ================hero section start==================== */}
-      <section>
+      {/*<section>
         <Container>
           <Row>
             <Col lg="3">
@@ -91,7 +91,7 @@ const Home = () => {
             <ServiceList />
           </Row>
         </Container>
-      </section>
+      </section> */}
 
       {/* ================featured section start==================== */}
       <section>
