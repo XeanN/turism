@@ -36,6 +36,10 @@ const quick__links = [
   {
     path: "/blogs",
     display: "Blogs",
+  },
+  {
+    path: "/contact",
+    display: "Contact",
   }
 ];
 
