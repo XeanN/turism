@@ -39,6 +39,21 @@
     box-shadow: 3px 3px 8px -3px #ddd;
     z-index: 999;
 }
+.external__logos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.external-logo {
+  height: 28px;
+  width: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.external-logo:hover {
+  transform: scale(1.1);
+}
 
 /* MAke it responsive  */
 @media only screen and (max-width:992px){

@@ -4,6 +4,9 @@ import "./footer.css";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo3.png";
+import tripadvisorLogo from "../../assets/images/tripadvisor.png";
+import getyourguideLogo from "../../assets/images/getyourguide.png";
+
 
 const phoneNumber = +51956481002;
 const whatsappMessage =
@@ -30,6 +33,10 @@ const quick__links = [
     path: "/tours",
     display: "Tours",
   },
+  {
+    path: "/blogs",
+    display: "Blogs",
+  }
 ];
 
 const quick__links2 = [
@@ -102,6 +109,23 @@ const Footer = () => {
                   </a>
                 </span>
               </div>
+              <div className="external__logos d-flex align-items-center gap-3 mt-3">
+                <a href="https://www.tripadvisor.com.pe/" target="_blank" rel="noreferrer">
+                  <img
+                    src={tripadvisorLogo}
+                    alt="Tripadvisor"
+                    className="external-logo-footer"
+                  />
+                </a>
+                <a href="https://www.getyourguide.com/" target="_blank" rel="noreferrer">
+                  <img
+                    src={getyourguideLogo}
+                    alt="GetYourGuide"
+                    className="external-logo-footer"
+                  />
+                </a>
+              </div>
+
             </div>
           </Col>
 

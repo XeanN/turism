@@ -3,6 +3,8 @@ import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 
 import logo from "../../assets/images/logo3.png";
+import tripadvisorLogo from "../../assets/images/tripadvisor.png";
+import getyourguideLogo from "../../assets/images/getyourguide.png";
 import "./header.css";
 
 import { AuthContext } from "../../context/AuthContext";
@@ -86,7 +88,16 @@ const Header = () => {
                       {item.display}
                     </NavLink>
                   </li>
-                ))}
+                  ))}
+                  <li className="nav__item external__logos">
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g445063-d6387633-Reviews-South_Americans_Secrets-Paracas_Ica_Region.html" target="_blank" rel="noreferrer">
+                      <img src={tripadvisorLogo} alt="Tripadvisor" className="external-logo" />
+                    </a>
+                    <a href="https://www.getyourguide.es/south-americans-secrets-eirl-s353664/" target="_blank" rel="noreferrer">
+                      <img src={getyourguideLogo} alt="GetYourGuide" className="external-logo" />
+                    </a>
+                  </li>
+                
               </ul>
             </div>
             {/*==================menu End================ */}

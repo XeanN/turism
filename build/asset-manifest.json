@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.33de6028.css",
-    "main.js": "/static/js/main.6dcb6cb5.js",
+    "main.css": "/static/css/main.2b414eba.css",
+    "main.js": "/static/js/main.bd54a31d.js",
     "static/media/gallery-08.jpg": "/static/media/gallery-08.f1a8eb97551e4d102f21.jpg",
     "static/media/gallery-04.jpg": "/static/media/gallery-04.49b33f960e41426fae11.jpg",
     "static/media/gallery-03.jpg": "/static/media/gallery-03.ae2eda272c32971b70fa.jpg",
@@ -34,7 +34,9 @@
     "static/media/kevin-k.JPG": "/static/media/kevin-k.61fd02781728459f7b8a.JPG",
     "static/media/ultralow.png": "/static/media/ultralow.a502dea72eaf2613ec4b.png",
     "static/media/nuevoImage.jpg": "/static/media/nuevoImage.1a27b589a0548d6f0e60.jpg",
+    "static/media/getyourguide.png": "/static/media/getyourguide.eadbb2ffd9b4c2d984ab.png",
     "static/media/laPositiva.jpg": "/static/media/laPositiva.a96e46985192251c1e31.jpg",
+    "static/media/tripadvisor.png": "/static/media/tripadvisor.9f4c187b26c6fea38643.png",
     "static/media/protection.png": "/static/media/protection.032fad7a33eaed03443e.png",
     "static/media/user.png": "/static/media/user.cb965e265fe56c8ca8ca.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -42,11 +44,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.33de6028.css.map": "/static/css/main.33de6028.css.map",
-    "main.6dcb6cb5.js.map": "/static/js/main.6dcb6cb5.js.map"
+    "main.2b414eba.css.map": "/static/css/main.2b414eba.css.map",
+    "main.bd54a31d.js.map": "/static/js/main.bd54a31d.js.map"
   },
   "entrypoints": [
-    "static/css/main.33de6028.css",
-    "static/js/main.6dcb6cb5.js"
+    "static/css/main.2b414eba.css",
+    "static/js/main.bd54a31d.js"
   ]
 }
