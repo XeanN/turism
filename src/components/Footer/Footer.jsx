@@ -68,7 +68,7 @@ const Footer = () => {
               </Link>
               <p>Turismo Nautico Paracas</p>
 
-              <div className="social__links d-flex align-items-center gap-4 social-icons">
+              <div className="social__links d-flex align-items-center gap-2 social-icons">
                 <span>
                   <a
                     href={whatsappLink}

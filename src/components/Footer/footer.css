@@ -73,3 +73,12 @@
     transition: .5s ease;
     width: 60px;
 }
+.external__logos img.external-logo-footer {
+  height: 35px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.external__logos img.external-logo-footer:hover {
+  transform: scale(1.1);
+}

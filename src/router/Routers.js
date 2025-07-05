@@ -11,6 +11,7 @@ import ThankYou from "../pages/ThankYou";
 import About from "../pages/About";
 import Blogs from "../pages/Blogs";
 import BlogDetails from "../pages/BlogDetails";
+import Contact from "../pages/Contact";
 
 const Routers = () => {
   return (
@@ -26,6 +27,7 @@ const Routers = () => {
       <Route path="/about" element={<About />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 };
