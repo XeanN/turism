@@ -8,9 +8,11 @@ import { Container, Row, Col } from "reactstrap";
 //import worldImg from "../assets/images/world.png";
 import experienceImg from "../assets/images/nuevoImage.jpg";
 //import heroVideo2 from "../assets/images/yates.mp4";
-import slader1 from "../assets/images/slader1_1268x738.jpg";
-import slader2 from "../assets/images/slader2_1268x738.jpg";
-import slader3 from "../assets/images/slader3_1268x738.jpg";
+import slider1 from "../assets/images/slider1_1268x738.jpg";
+import slider2 from "../assets/images/slider2_1268x738.jpg";
+import slider3 from "../assets/images/slider3_1268x738.jpg";
+import slider4 from "../assets/images/slider4_1268x738.jpg";
+import slider5 from "../assets/images/slider5_1268x738.jpg";
 import Subtitle from "./../shared/Subtitle";
 
 //import SearchBar from "../shared/SearchBar";
@@ -21,7 +23,7 @@ import Testimonial from "../components/Testimonial/Testimonial";
 import Newsletter from "../shared/Newsletter";
 
 const Home = () => {
-  const sliderImages = [slader1, slader2, slader3];
+  const sliderImages = [slider1, slider2, slider3, slider4, slider5];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Auto-slide
@@ -30,7 +32,7 @@ const Home = () => {
       setCurrentIndex((prevIndex) =>
         prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [sliderImages.length]);
 

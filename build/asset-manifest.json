@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.41f872b7.css",
-    "main.js": "/static/js/main.a35ef91e.js",
+    "main.css": "/static/css/main.33de6028.css",
+    "main.js": "/static/js/main.6dcb6cb5.js",
     "static/media/gallery-08.jpg": "/static/media/gallery-08.f1a8eb97551e4d102f21.jpg",
     "static/media/gallery-04.jpg": "/static/media/gallery-04.49b33f960e41426fae11.jpg",
     "static/media/gallery-03.jpg": "/static/media/gallery-03.ae2eda272c32971b70fa.jpg",
@@ -9,6 +9,7 @@
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/gallery-05.jpg": "/static/media/gallery-05.213579f91f84c792657b.jpg",
     "static/media/gallery-07.jpg": "/static/media/gallery-07.3cb72519f84ff2b43187.jpg",
+    "static/media/slider3_1268x738.jpg": "/static/media/slider3_1268x738.f44c75f0663c090738ba.jpg",
     "static/media/gallery-02.jpg": "/static/media/gallery-02.88f6ce5c6d20f0aa9b37.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.4b1822e13f639c746633.jpg",
     "static/media/gallery-06.jpg": "/static/media/gallery-06.fef5d5b8da0d9305b657.jpg",
@@ -19,13 +20,14 @@
     "static/media/southAmerican.jpg": "/static/media/southAmerican.c02e20b677b1067def86.jpg",
     "static/media/login.png": "/static/media/login.0ef8aace597cf40e2588.png",
     "static/media/register.png": "/static/media/register.e7a4d6e61777cd826cef.png",
-    "static/media/slader3_1268x738.jpg": "/static/media/slader3_1268x738.5ef8d3db6a981a20e8dd.jpg",
-    "static/media/slader1_1268x738.jpg": "/static/media/slader1_1268x738.6fc6439378e711ea704b.jpg",
+    "static/media/slider1_1268x738.jpg": "/static/media/slider1_1268x738.74da708471ed438e2bc7.jpg",
     "static/media/remixicon.woff?t=1590207869815": "/static/media/remixicon.8d09fa11700ed63cf96e.woff",
     "static/media/male-tourist.png": "/static/media/male-tourist.f000d0ad1ca492b2bcfb.png",
     "static/media/tours.jpg": "/static/media/tours.2a53d203cd1d21adf50c.jpg",
-    "static/media/slader2_1268x738.jpg": "/static/media/slader2_1268x738.4b04cdc9a753d7ddf11d.jpg",
     "static/media/remixicon.woff2?t=1590207869815": "/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/slider2_1268x738.jpg": "/static/media/slider2_1268x738.8f710e4501c9b70658d3.jpg",
+    "static/media/slider4_1268x738.jpg": "/static/media/slider4_1268x738.eb3bc51a05669c7b70f7.jpg",
+    "static/media/slider5_1268x738.jpg": "/static/media/slider5_1268x738.19e81c8e41bd74e07cd5.jpg",
     "static/media/tripadvisor.jpg": "/static/media/tripadvisor.f495cb53577b87fe5b3b.jpg",
     "static/media/fernanda.jpg": "/static/media/fernanda.33ca4b7929997e2ea02e.jpg",
     "static/media/wendy-w.jpg": "/static/media/wendy-w.cc992c8eac4865b029b2.jpg",
@@ -40,11 +42,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.41f872b7.css.map": "/static/css/main.41f872b7.css.map",
-    "main.a35ef91e.js.map": "/static/js/main.a35ef91e.js.map"
+    "main.33de6028.css.map": "/static/css/main.33de6028.css.map",
+    "main.6dcb6cb5.js.map": "/static/js/main.6dcb6cb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.41f872b7.css",
-    "static/js/main.a35ef91e.js"
+    "static/css/main.33de6028.css",
+    "static/js/main.6dcb6cb5.js"
   ]
 }

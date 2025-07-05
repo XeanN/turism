@@ -81,10 +81,11 @@ const TourDetail = () => {
 
     // call api
     try {
-      if (!user || user === undefined || user === null) {
+      //Aqui es donde se debe verificar si el usuario está autenticado para hacer el REVIEW IMPORTANTE
+      /*if (!user || user === undefined || user === null) {
         alert("Please sign in");
         return;
-      }
+      }*/
 
       const data = new FormData();
       data.append("reviewText", reviewText);
