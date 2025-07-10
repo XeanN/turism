@@ -15,9 +15,9 @@ const Contact = () => {
       return;
     }
 
-    const fullName = formData.get("fullName");
+    const fullName = formData.get("name");
     const email = formData.get("email");
-    const subject = formData.get("subject");
+    const subject = formData.get("title");
     const message = formData.get("message");
 
     emailjs
@@ -65,9 +65,9 @@ const Contact = () => {
                 <input type="text" name="company" id="company" autoComplete="off" />
               </div>
 
-              <input type="text" name="fullName" placeholder="Full Name*" required />
+              <input type="text" name="name" placeholder="Full Name*" required />
               <input type="email" name="email" placeholder="Email*" required />
-              <input type="text" name="subject" placeholder="Subject*" required />
+              <input type="text" name="title" placeholder="Subject*" required />
               <textarea name="message" placeholder="Message*" rows="5" required></textarea>
 
               <div className="recaptcha-box">
