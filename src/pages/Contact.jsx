@@ -1,6 +1,7 @@
 import React from "react";
 import CommonSection from "../shared/CommonSection";
 import "../styles/contact.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -19,9 +20,29 @@ const Contact = () => {
     const subject = formData.get("subject");
     const message = formData.get("message");
 
-    console.log({ fullName, email, subject, message });
+    emailjs
+      .sendForm(
+        "service_vbzfuuu",
+        "template_3d5iovd",
+        form,
+        "4zsaDURdbgabCbDU0"
+      )
+      .then(
+        (result) => {
+          console.log("Correo enviado:", result.text);
+          alert("Tu mensaje fue enviado correctamente ✅");
+          form.reset();
+        },
+        (error) => {
+          console.log("Error al enviar:", error.text);
+          alert("Ocurrió un error al enviar el mensaje ❌");
+        }
+      );
 
-    alert("Mensaje enviado correctamente (simulado).");
+    const text = `📩 *Contact Form*\n\n👤 *Nombre:* ${fullName}\n📧 *Email:* ${email}\n📌 *Asunto:* ${subject}\n📝 *Mensaje:* ${message}`;
+    const phone = "51956481002";
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank");
     form.reset();
   };
 

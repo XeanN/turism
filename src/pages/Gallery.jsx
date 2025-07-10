@@ -8,8 +8,8 @@ import "../styles/gallery.css";
 const Gallery = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
-
-  const images = Array.from({ length: 53 }, (_, i) => ({
+//aca aumentamos la cantidad de imagenes
+  const images = Array.from({ length: 52 }, (_, i) => ({
     src: `/images/gallery${i + 1}.jpeg`,
   }));
 
