@@ -40,6 +40,10 @@ const quick__links = [
   {
     path: "/contact",
     display: "Contact",
+  },
+  {
+    path: "/gallery",
+    display: "Gallery",
   }
 ];
 
