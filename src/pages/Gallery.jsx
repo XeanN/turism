@@ -9,7 +9,7 @@ const Gallery = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const images = Array.from({ length: 54 }, (_, i) => ({
+  const images = Array.from({ length: 53 }, (_, i) => ({
     src: `/images/gallery${i + 1}.jpeg`,
   }));
 
