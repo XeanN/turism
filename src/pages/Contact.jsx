@@ -30,6 +30,8 @@ const pageText = {
     address: 'Inside Marina Turística "Tourist Pier", right next to Hotel San Agustín - Paracas. Open 7:30 am to 1:00 pm (Paracas)',
     sentOk: "Your message was sent successfully ✅",
     sentError: "There was an error sending your message ❌",
+    viewOnMaps: "View on Google Maps",
+    mapTitle: "Location of Turismo Nautico Paracas on Google Maps",
   },
   es: {
     metaTitle: "Contáctanos | Turismo Nautico Paracas",
@@ -55,6 +57,8 @@ const pageText = {
     address: 'Dentro de la Marina Turística "Muelle Turístico", al lado del Hotel San Agustín - Paracas. Abierto de 7:30 am a 1:00 pm (Paracas)',
     sentOk: "Tu mensaje fue enviado correctamente ✅",
     sentError: "Ocurrió un error al enviar el mensaje ❌",
+    viewOnMaps: "Ver en Google Maps",
+    mapTitle: "Ubicación de Turismo Nautico Paracas en Google Maps",
   },
 };
 
@@ -166,6 +170,24 @@ const Contact = () => {
               <li>Amarilis Pereda & Lucio Hancco</li>
               <li>{t.address}</li>
             </ul>
+
+            <div className="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.4519460619935!2d-76.24684347399574!3d-13.831346219530838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91106320f61d9cb3%3A0x78ba793d4ca8fbc!2sSOUTH%20AMERICANS%20SECRETS%20E.I.R.L!5e0!3m2!1ses-419!2spe!4v1785513235536!5m2!1ses-419!2spe"
+                title={t.mapTitle}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <a
+              className="map-link"
+              href="https://www.google.com/maps/place/SOUTH+AMERICANS+SECRETS+E.I.R.L/@-13.8313462,-76.2468435,20.28z/data=!4m9!1m2!2m1!1sMarina+Tur%C3%ADstica+%22Tourist+Pier%22!3m5!1s0x91106320f61d9cb3:0x78ba793d4ca8fbc!8m2!3d-13.8314595!4d-76.2469927!16s%2Fg%2F11gdjps46g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.viewOnMaps} →
+            </a>
           </div>
         </div>
       </section>

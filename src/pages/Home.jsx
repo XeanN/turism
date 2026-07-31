@@ -121,6 +121,13 @@ const Home = () => {
       addressLocality: "Paracas",
       addressCountry: "PE",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -13.831346219530838,
+      longitude: -76.24684347399574,
+    },
+    hasMap:
+      "https://www.google.com/maps/place/SOUTH+AMERICANS+SECRETS+E.I.R.L/@-13.8313462,-76.2468435,20.28z",
     areaServed: "Paracas, Peru",
   };
 

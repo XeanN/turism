@@ -30,3 +30,33 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.map-embed {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
