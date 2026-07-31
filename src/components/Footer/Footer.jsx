@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo3.png";
 import tripadvisorLogo from "../../assets/images/tripadvisor.png";
 import getyourguideLogo from "../../assets/images/getyourguide.png";
+import { useLanguage, withLang } from "../../context/LanguageContext";
 
 
 const phoneNumber = +51956481002;
@@ -20,50 +21,45 @@ const facebookLink =
 const instagramLink = "https://www.instagram.com/southamericanssecrets/?hl=es";
 const youtubeLink = "https://www.youtube.com/@luciohancco3237";
 
-const quick__links = [
-  {
-    path: "/home",
-    display: "Home",
-  },
-  {
-    path: "/about",
-    display: "About",
-  },
-  {
-    path: "/tours",
-    display: "Tours",
-  },
-  {
-    path: "/blogs",
-    display: "Blogs",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
-  },
-  {
-    path: "/gallery",
-    display: "Gallery",
-  }
-];
+const quick__links = {
+  en: [
+    { path: "/home", display: "Home" },
+    { path: "/about", display: "About" },
+    { path: "/tours", display: "Tours" },
+    { path: "/blogs", display: "Blogs" },
+    { path: "/contact", display: "Contact" },
+    { path: "/gallery", display: "Gallery" },
+  ],
+  es: [
+    { path: "/home", display: "Inicio" },
+    { path: "/about", display: "Nosotros" },
+    { path: "/tours", display: "Tours" },
+    { path: "/blogs", display: "Blog" },
+    { path: "/contact", display: "Contacto" },
+    { path: "/gallery", display: "Galería" },
+  ],
+};
 
-const quick__links2 = [
-  // {
-  //   path: "/gallery",
-  //   display: "Gallery",
-  // },
-  {
-    path: "/login",
-    display: "Login",
-  },
-  {
-    path: "/register",
-    display: "Register",
-  },
-];
+const quick__links2 = {
+  en: [
+    { path: "/login", display: "Login" },
+    { path: "/register", display: "Register" },
+  ],
+  es: [
+    { path: "/login", display: "Iniciar sesión" },
+    { path: "/register", display: "Registrarse" },
+  ],
+};
+
+const footerText = {
+  en: { discover: "Discover", quickLinks: "Quick Links", contact: "Contact", address: "Address:", email: "Email:", phone: "Phone:", rights: "All rights reserved." },
+  es: { discover: "Descubre", quickLinks: "Enlaces Rápidos", contact: "Contacto", address: "Dirección:", email: "Correo:", phone: "Teléfono:", rights: "Todos los derechos reservados." },
+};
 
 const Footer = () => {
   const year = new Date().getFullYear();
+  const lang = useLanguage();
+  const t = footerText[lang];
 
   return (
     <footer className="footer">
@@ -71,7 +67,7 @@ const Footer = () => {
         <Row>
           <Col lg="3">
             <div className="logo">
-              <Link to="/home">
+              <Link to={withLang("/home", lang)}>
                 <img src={logo} alt="logo" />
               </Link>
               <p>Turismo Nautico Paracas</p>
@@ -138,34 +134,34 @@ const Footer = () => {
           </Col>
 
           <Col lg="3">
-            <h5 className="footer__link-title">Discover</h5>
+            <h5 className="footer__link-title">{t.discover}</h5>
             <ListGroup className="footer__quick-links">
-              {quick__links.map((item, index) => (
+              {quick__links[lang].map((item, index) => (
                 <ListGroupItem key={index} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
+                  <Link to={withLang(item.path, lang)}>{item.display}</Link>
                 </ListGroupItem>
               ))}
             </ListGroup>
           </Col>
           <Col lg="3">
-            <h5 className="footer__link-title">Quick Links</h5>
+            <h5 className="footer__link-title">{t.quickLinks}</h5>
             <ListGroup className="footer__quick-links">
-              {quick__links2.map((item, index) => (
+              {quick__links2[lang].map((item, index) => (
                 <ListGroupItem key={index} className="ps-0 border-0">
-                  <Link to={item.path}>{item.display}</Link>
+                  <Link to={withLang(item.path, lang)}>{item.display}</Link>
                 </ListGroupItem>
               ))}
             </ListGroup>
           </Col>
           <Col lg="3">
-            <h5 className="footer__link-title">Contact</h5>
+            <h5 className="footer__link-title">{t.contact}</h5>
             <ListGroup className="footer__quick-links">
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
                     <i className="ri-map-pin-line"></i>
                   </span>
-                  Address:
+                  {t.address}
                 </h6>
                 <p className="mb-0">A.H.Alberto Tataje Muñoz Mz "C" Lote 2, Paracas, Peru</p>
               </ListGroupItem>
@@ -175,7 +171,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-mail-line"></i>
                   </span>
-                  Email:
+                  {t.email}
                 </h6>
                 <p className="mb-0">Turismonauticoparacas@gmail.com</p>
               </ListGroupItem>
@@ -185,7 +181,7 @@ const Footer = () => {
                   <span>
                     <i className="ri-phone-fill"></i>
                   </span>
-                  Phone:
+                  {t.phone}
                 </h6>
                 <p className="mb-0">+51 956481002</p>
               </ListGroupItem>
@@ -194,7 +190,7 @@ const Footer = () => {
 
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              Copyright {year} by Turismo Nautico Paracas. All rights reserved.
+              Copyright {year} by Turismo Nautico Paracas. {t.rights}
             </p>
           </Col>
         </Row>

@@ -8,6 +8,12 @@ import userIcon from "../assets/images/user.png";
 
 import { AuthContext } from "./../context/AuthContext";
 import { BASE_URL } from "./../utils/config";
+import { useLanguage, withLang } from "./../context/LanguageContext";
+
+const text = {
+  en: { title: "Register", username: "Username", email: "Email", password: "Password", submit: "Create Account", haveAccount: "Already have an account?", login: "Login" },
+  es: { title: "Registrarse", username: "Usuario", email: "Correo", password: "Contraseña", submit: "Crear Cuenta", haveAccount: "¿Ya tienes una cuenta?", login: "Iniciar sesión" },
+};
 
 const Register = () => {
   const [credentials, setCredentials] = useState({
@@ -18,6 +24,8 @@ const Register = () => {
 
   const { dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
+  const lang = useLanguage();
+  const t = text[lang];
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
@@ -42,7 +50,7 @@ const Register = () => {
 
       if (result.success) {
         dispatch({ type: "REGISTER_SUCCESS" });
-        navigate("/login");
+        navigate(withLang("/login", lang));
       } else {
         return alert(result.message);
       }
@@ -65,13 +73,13 @@ const Register = () => {
                 <div className="user">
                   <img src={userIcon} alt="Ícono de usuario" />
                 </div>
-                <h2>Register</h2>
+                <h2>{t.title}</h2>
 
                 <Form onSubmit={handleClick}>
                   <FormGroup>
                     <input
                       type="text"
-                      placeholder="Username"
+                      placeholder={t.username}
                       required
                       id="username"
                       onChange={handleChange}
@@ -80,7 +88,7 @@ const Register = () => {
                   <FormGroup>
                     <input
                       type="email"
-                      placeholder="Email"
+                      placeholder={t.email}
                       required
                       id="email"
                       onChange={handleChange}
@@ -89,7 +97,7 @@ const Register = () => {
                   <FormGroup>
                     <input
                       type="password"
-                      placeholder="Password"
+                      placeholder={t.password}
                       required
                       id="password"
                       onChange={handleChange}
@@ -99,11 +107,11 @@ const Register = () => {
                     className="btn secondary__btn auth__btn"
                     type="submit"
                   >
-                    Create Account
+                    {t.submit}
                   </Button>
                 </Form>
                 <p>
-                  Already have an account? <Link to="/login">Login</Link>
+                  {t.haveAccount} <Link to={withLang("/login", lang)}>{t.login}</Link>
                 </p>
               </div>
             </div>

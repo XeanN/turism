@@ -1,23 +1,156 @@
 import React from "react";
-import "../../styles/montesierpe.css";
 
-const Blog12 = () => {
+const Blog12 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+          <div>
+              <div className="content-box">
+                  <h2>"El peor enemigo no es el olor, el calor ni el cansancio". Como nos explicó Domingo León, "el peor enemigo es el polvo que se pega en las cejas, cubre la nariz y las mejillas, convirtiendo el rostro en una máscara rígida".</h2>
+                  <p>
+                      El creciente costo de los fertilizantes sintéticos ha vuelto a poner de moda al guano. Algunos trabajadores recolectan el excremento de aves marinas en la Isla Guañape Norte, frente a la costa del Perú. El boom global de las materias primas ha llegado a esto: antes del guano, el excremento de aves fue el centro de un enfrentamiento imperialista en el mar durante el siglo XIX, y hoy vuelve a tener una fuerte demanda.
+                  </p>
+              </div>
+              <div className="quote-block">
+                  <em>
+                      "El peor enemigo no es el olor, el calor ni el cansancio... [es] el polvo que se pega en las cejas, cubre la nariz y las mejillas, convirtiendo el rostro en una máscara rígida".
+                  </em>
+              </div>
+          </div>
+          <br />
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_2_t.jpg" alt="Monte Sierpe" className="image-left" />
+              <div className="quote-box">
+                  <em>"Estamos excavando parte del último guano que queda en el Perú…"</em>
+              </div>
+                  <p>
+                      El aumento en los precios de los fertilizantes sintéticos y de los alimentos orgánicos está dirigiendo la atención hacia el guano, un fertilizante orgánico que alguna vez se encontró en abundancia en esta y otras 20 islas frente a la costa del Perú, donde un clima excepcionalmente seco preserva los excrementos de aves marinas como el cormorán guanay y el piquero peruano.
+                      <br />
+                      En las mismas islas donde miles de convictos, desertores del ejército y sirvientes chinos murieron recolectando guano hace siglo y medio, hoy equipos de trabajadores quechuas de la sierra raspan el suelo endurecido para retirar el estiércol y llevarlo en botes hasta el continente. "Estamos excavando parte del último guano que queda en el Perú", explica Víctor Ropón, de 66 años, capataz de la provincia de Áncash, cuya piel curtida refleja sus años de trabajo en las islas guaneras, desde que tenía 17 años.
+                  </p>
+          </div>
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_3_t.jpg" alt="Tambo Colorado" className="image-left" />
+
+              <div className="quote-box">
+                  <em>"Podrían quedar unos 10 años de reservas, quizás 20, y luego se agotará por completo"</em>
+              </div>
+
+              <p>
+              "Podrían quedar unos 10 años de reservas, quizás 20, y luego se agotará por completo", lamenta Ropón, refiriéndose al temor de que la población de aves marinas esté condenada a disminuir drásticamente en los próximos años. Es un pequeño milagro que las islas todavía tengan reservas de guano, gracias a un esfuerzo de un siglo elogiado por biólogos como un raro ejemplo de explotación sostenible del recurso. Mientras continúa el debate sobre si la producción mundial de petróleo ha alcanzado su pico, la historia del guano podría ofrecer una parábola, con traiciones marítimas, el desarrollo de alternativas sintéticas en Europa y el esfuerzo desesperado por evitar el agotamiento de los yacimientos cuando estos se agotaban.
+              </p>
+          </div>
+
+
+          <div className="intro-paragraph">
+              <div className="quote-box">
+                  <em>"Antes de que existiera el petróleo, existía el guano, y por supuesto se desataron guerras para controlarlo"</em>
+              </div>
+
+              <p >
+                  "Antes de que existiera el petróleo, existía el guano, y por supuesto se desataron guerras para controlarlo", dice Pablo Arriola, director de Proabonos, la empresa estatal que controla la producción de guano, en referencia a conflictos como la Guerra de las Islas Chincha, cuando el Perú impidió que España recuperara el control sobre las islas productoras de guano. "El guano es un negocio muy codiciado". También es, sin duda, una tarea agotadora desde la perspectiva de los trabajadores que migran cada año a la isla para recolectarlo. Los jornaleros se levantan antes del amanecer para cavar el guano endurecido con palas y azadones.
+              </p>
+          </div>
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_4_t.jpg" alt="Monte Sierpe" className="image-left" />
+
+              <div className="quote-box">
+                  <em>"No es una vida fácil, pero yo la elegí"</em>
+              </div>
+
+              <p>
+                  Muchos van descalzos, y cuando cambian de turno, poco después del mediodía, tienen los pies y las pantorrillas cubiertos de estiércol. Algunos se cubren la boca y la nariz con un paño para evitar respirar el polvo de guano, que afortunadamente es casi inodoro, salvo por un leve olor a amoníaco. "No es una vida fácil, pero yo la elegí", dice Bruno Sulca, de 62 años, mientras supervisa la carga de sacos de guano de Guañape desde la isla, frente a la costa norte del Perú. Sulca y otros trabajadores ganan cerca de 400 euros al mes, más del triple de lo que se paga a los trabajadores manuales en las empobrecidas zonas de la sierra.
+              </p>
+          </div>
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_5_t.jpg" alt="Monte Sierpe" className="image-left" />
+              <div className="quote-box">
+                  <em>"El problema es que no hay suficiente para satisfacer la demanda, ahora que nuevos productos como el banano orgánico compiten por lo poco disponible."</em>
+              </div>
+              <p>
+                  El comercio de guano en el Perú, de manera casi quijotesca, se mantiene después de haber sido casi agotado por la sobreexplotación. Es poco probable que vuelva a tener un auge comparable al del siglo XIX, cuando los depósitos tenían 50 pies de espesor y los ingresos por exportación representaban la mayor parte del presupuesto nacional. En la mayoría de las islas, incluida Asia, ubicada al sur de la capital, Lima, el guano no supera las 30 pulgadas de espesor. Pero lo que queda aquí es codiciado si se observa en el contexto de la frenética demanda, en el Perú y en el extranjero, provocada por los fertilizantes sintéticos como la urea, cuyo precio se ha duplicado en el último año.
+                  <br />
+                  "El guano tiene la ventaja de estar libre de químicos artificiales", explica Enrique Balmaceda, productor de mangos orgánicos en Piura, una provincia norteña del Perú. "El problema es que no hay suficiente para satisfacer la demanda, ahora que nuevos productos como el banano orgánico compiten por lo poco disponible."
+              </p>
+          </div>
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_6_t.jpg" alt="Monte Sierpe" className="image-left" />
+              <p>
+                  Esto explica por qué el Perú pone tanto esfuerzo en preservar el guano restante, un esfuerzo que se remonta a un siglo atrás, cuando el país creó la Compañía Administradora del Guano y nacionalizó las islas, algunas de ellas controladas por los británicos, para evitar la extinción de la producción de guano. Desde entonces, el Gobierno del Perú restringe la recolección a unas dos islas por año, para permitir que el estiércol se acumule.
+                  <br />
+                  Los administradores del guano mantienen guardias armados en cada una de las islas para proteger a las aves. "Los pescadores son los que más daño causan", dijo Rómulo Ibarra, de 40 años, uno de los dos guardias apostados en la isla deshabitada de Asia. "Cuando te acercas a la isla, los motores asustan a los guanayes", dice, refiriéndose al preciado cormorán guanay. "Y en el mar, los botes pesqueros capturan la anchoveta, algo que no podemos controlar". La anchoveta es un pez de 15 centímetros de la familia de las anchoas y es el alimento principal de las aves marinas que dejan sus excrementos en estas áridas islas.
+              </p>
+          </div>
+
+          <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_7_t.jpg" alt="Monte Sierpe" className="image-left" />
+              <div className="quote-box">
+                  <em>"… una conclusión poco gloriosa para algo que ha sobrevivido guerras y otras locuras humanas … el escenario que enfrentamos: el fin del guano"</em>
+              </div>
+              <p>
+                  El mayor temor de los recolectores de guano es que las flotas comerciales estén agotando las reservas de anchoveta, cada vez más utilizada como alimento para peces y otros animales, y ahora también con creciente demanda en Asia para productos cárnicos. Aunque en los últimos dos años la población de aves ha aumentado de 3.2 a 4 millones, sigue siendo una cifra insignificante comparada con los 60 millones que hubo en el punto más alto del primer boom del guano. Ante la disminución de las reservas de anchoveta, los administradores de Proabonos han congelado las exportaciones de guano para garantizar el abastecimiento interno.
+              </p>
+          </div>
+
+
+           <div className="intro-paragraph">
+              <img src="/tour-images/Paracas/guano_collectors_8_t.jpg" alt="Monte Sierpe" className="image-left" />
+              <p>
+                  Uriel de la Torre, biólogo especializado en la conservación del cormorán guanay y otras aves marinas, teme que, a menos que se tomen medidas para evitar la sobrepesca, tanto las anchovetas como las aves marinas puedan extinguirse para 2030. "Sería una conclusión poco gloriosa para algo que ha sobrevivido guerras y otras locuras humanas", dice. "Pero este es el escenario que enfrentamos: el fin del guano".
+              </p>
+          </div>
+
+
+          <h2>Preguntas Frecuentes (FAQ) – Recolectores de Guano en el Perú</h2>
+
+          <h4>📍 ¿Dónde se recolecta el guano en el Perú?</h4>
+          <p>El guano se recolecta principalmente en las islas guaneras frente a la costa peruana, como la Isla Guañape Norte y la Isla Asia. Estas islas albergan millones de aves marinas cuyos excrementos forman este valioso fertilizante.</p>
+
+          <h4>🧑‍🌾 ¿Quién recolecta el guano hoy en día?</h4>
+          <p>En su mayoría, trabajadores quechuas provenientes de la sierra. Trabajan en condiciones difíciles, muchas veces descalzos, raspando el guano endurecido para meterlo en sacos y transportarlo.</p>
+
+          <h4>💰 ¿Cuánto ganan los trabajadores del guano?</h4>
+          <p>Los trabajadores suelen ganar alrededor de 400 euros al mes, un salario alto comparado con otros trabajos manuales en el Perú rural.</p>
+
+          <h4>🦤 ¿Qué aves producen el guano?</h4>
+          <p>Principalmente el cormorán guanay, el piquero peruano y el pelícano pardo. Estas aves se alimentan de anchoveta, un pez pequeño crucial para el ecosistema marino.</p>
+
+          <h4>🧪 ¿Por qué el guano vuelve a ser valioso?</h4>
+          <p>Debido al aumento en el costo de los fertilizantes sintéticos y la creciente demanda global de agricultura orgánica, la riqueza natural del guano en nitrógeno, fósforo y potasio ha vuelto a captar atención.</p>
+
+          <h4>⛏️ ¿Es sostenible la recolección de guano?</h4>
+          <p>Sí, el Perú regula estrictamente la recolección de guano: solo se cosechan dos islas por año, permitiendo que las aves marinas tengan tiempo para recolonizar y que el estiércol se acumule.</p>
+
+          <h4>⚠️ ¿Qué amenazas enfrenta la producción de guano?</h4>
+          <p>La sobrepesca de la anchoveta, la pérdida de hábitat y el cambio climático amenazan a las poblaciones de aves marinas. Una disminución de las aves podría significar el fin de la producción de guano.</p>
+
+          <h4>🌍 ¿Fue el guano históricamente importante?</h4>
+          <p>Sin duda. En el siglo XIX, el guano fue la principal exportación del Perú e incluso desató un conflicto internacional, como la Guerra de las Islas Chincha.</p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
         <div>
             <div className="content-box">
                 <h2>The worst enemy is not the smell, heat or exhaustion." As Domingo León explained to us, "the worst enemy is dust sticking on the eyebrows, covering our noses and cheeks and turning our face into a rigid mask."</h2>
                 <p>
-                    The rising cost of synthetic fertilizers has made guano sexy again. Some workers collect the dung of seabirds in the North Guañape Island, off the coast of Peru. The global boom in commodities has come to this: before guano, bird dung was the center of an imperialist confrontation at sea in the nineteenth century, and is once again in strong demand.    
+                    The rising cost of synthetic fertilizers has made guano sexy again. Some workers collect the dung of seabirds in the North Guañape Island, off the coast of Peru. The global boom in commodities has come to this: before guano, bird dung was the center of an imperialist confrontation at sea in the nineteenth century, and is once again in strong demand.
                 </p>
             </div>
             <div className="quote-block">
                 <em>
                     "The worst enemy is not the smell, heat or exhaustion... [it] is dust sticking on the eyebrows, covering our noses and cheeks and turning our face into a rigid mask."
                 </em>
-            </div>   
+            </div>
         </div>
-        <br />  
+        <br />
 
         <div className="intro-paragraph">
             <img src="/tour-images/Paracas/guano_collectors_2_t.jpg" alt="Monte Sierpe" className="image-left" />
@@ -29,7 +162,7 @@ const Blog12 = () => {
                     <br />
                     On the same islands where thousands of convicts, army deserters and Chinese servants died collecting guano a century and a half ago, teams of Quechua laborers from the mountains now scrape to remove manure from the hard ground and get it into boats that transport it to the continent. "We are excavating some of the last remaining guano in Peru" , explains Victor Ropón, 66, foreman of the province of Ancash, whose leathery skin reflects his years working on the guano islands, since 17 years old.
                 </p>
-        </div>    
+        </div>
 
         <div className="intro-paragraph">
             <img src="/tour-images/Paracas/guano_collectors_3_t.jpg" alt="Tambo Colorado" className="image-left" />
@@ -42,7 +175,7 @@ const Blog12 = () => {
             “It could be about 10 years of reserves, maybe 20, and then it will be totally exhausted” , Ropón laments, referring to fears that the seabird population is doomed to drastically decrease in the coming years. It's a small miracle that the islands still have guano reserves, thanks to a century's effort praised by biologists as a rare example of sustainable exploitation of the resource. As the debate over whether global oil production has peaked continues, the story of guano could offer a parable, with maritime treachery, development of synthetic alternatives in Europe and in the desperate effort to avoid deposits when they were exhausted.
             </p>
         </div>
-      
+
 
         <div className="intro-paragraph">
             <div className="quote-box">
@@ -51,7 +184,7 @@ const Blog12 = () => {
 
             <p >
                 “Before there was oil, there was guano, and of course wars were unleashed to control it” says Pablo Arriola, director of Proabonos, the state company that controls the production of guano, in response to conflicts such as the War of the Chincha Islands when Peru prevented Spain regaining control over guano-producing islands. "Guano is a highly desirable business". It's also an undeniably grueling undertaking from the perspective of workers who migrate annually to the island to collect it. Day laborers rise before dawn to dig the hardened guano with shovels and hoes.
-            </p>    
+            </p>
         </div>
 
         <div className="intro-paragraph">
@@ -102,7 +235,7 @@ const Blog12 = () => {
             <img src="/tour-images/Paracas/guano_collectors_8_t.jpg" alt="Monte Sierpe" className="image-left" />
             <p>
                 Uriel de la Torre, a biologist specializing in the conservation of the Guanay Cormorant and other seabirds, fears that unless measures are taken to prevent overfishing, both anchovetas and seabirds may become extinct by 2030. “It would be an inglorious conclusion for something that has survived wars and other human follies” he says. “But this is the scenario we face: the end of guano.”
-            </p> 
+            </p>
         </div>
 
 

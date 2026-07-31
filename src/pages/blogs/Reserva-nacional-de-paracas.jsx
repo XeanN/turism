@@ -1,6 +1,138 @@
 import React from "react";
 
-const Blog3 = () => {
+const Blog3 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Reserva Nacional de Paracas: Guía Completa para tu Visita</h2>
+
+        <p>
+          La Reserva Nacional de Paracas es mucho más que un simple parque natural. Es el único ecosistema marino protegido del Perú, donde el desierto más seco del planeta se encuentra con el frío océano Pacífico. Sus playas rojizas, formaciones rocosas talladas por el viento, biodiversidad única y su gran significado histórico la convierten en un destino imprescindible para cualquier viajero que explore la costa sur del Perú.
+        </p>
+
+        <h3>¿Por Qué Visitar la Reserva Nacional de Paracas?</h3>
+        <p>
+          Paracas ofrece uno de los paisajes costeros más impresionantes de Sudamérica. Aquí puedes:
+        </p>
+        <ul>
+          <li>Caminar por playas de arena roja únicas en su tipo.</li>
+          <li>Observar miles de aves migratorias y residentes a lo largo de acantilados y bahías.</li>
+          <li>Explorar formaciones geológicas que cuentan millones de años de historia natural.</li>
+          <li>Conectar con restos arqueológicos de culturas preincaicas como la cultura Paracas.</li>
+        </ul>
+
+        <p>
+          También es un destino ideal para viajeros que buscan turismo sostenible, respetando tanto el patrimonio natural como el cultural.
+        </p>
+
+        <h3>Historia de la Reserva Nacional de Paracas</h3>
+        <p>
+          Creada oficialmente en 1975, la Reserva Nacional de Paracas abarca más de 335,000 hectáreas (65% marinas, 35% desérticas). Sin embargo, su historia se remonta miles de años, cuando la cultura Paracas habitó la zona (800 a.C. - 100 d.C.), dejando atrás impresionantes textiles funerarios, avanzadas técnicas de cirugía craneal y el icónico geoglifo del Candelabro.
+        </p>
+
+        <p>
+          Gracias a la convergencia de la fría Corriente de Humboldt y la corriente tropical más cálida, sus aguas están entre las más productivas biológicamente del planeta, sosteniendo una biodiversidad increíble.
+        </p>
+
+        <h3>Principales Atractivos Dentro de la Reserva</h3>
+
+        <h4>1️⃣ Playa Roja: Un Espectáculo Natural</h4>
+        <p>
+          Esta playa debe su color a la erosión de rocas de granito rosado que se desintegran en fina arena roja. El contraste entre el rojo intenso y el mar azul crea una de las postales más icónicas de Paracas.
+        </p>
+
+        <h4>2️⃣ Mirador de La Catedral</h4>
+        <p>
+          Antes del terremoto de 2007, La Catedral era un gran arco de roca natural esculpido por siglos de erosión marina. Aunque parte de su estructura colapsó, el mirador sigue ofreciendo vistas impresionantes del mar y los acantilados donde anidan aves marinas.
+        </p>
+
+        <h4>3️⃣ Lagunillas</h4>
+        <p>
+          Un pequeño puerto dentro de la reserva, perfecto para una parada de almuerzo. Aquí encontrarás restaurantes especializados en mariscos y pescado fresco. También es un excelente lugar para observar gaviotas, pelícanos y, en ocasiones, flamencos.
+        </p>
+
+        <h4>4️⃣ Centro de Interpretación de Paracas</h4>
+        <p>
+          Este museo moderno explica de forma interactiva la formación geológica, la biodiversidad, las culturas prehispánicas y la importancia ecológica de la reserva. Es muy recomendable empezar tu visita por aquí.
+        </p>
+
+        <h3>La Biodiversidad Única de Paracas</h3>
+        <p>
+          Aunque es un desierto, las aguas frías y ricas en nutrientes generan un ecosistema extremadamente rico:
+        </p>
+        <ul>
+          <li>Más de 215 especies de aves (pelícanos, cormoranes, gaviotines, flamencos, piqueros, etc.).</li>
+          <li>20 especies de mamíferos marinos como lobos marinos, delfines y, ocasionalmente, ballenas jorobadas.</li>
+          <li>180 especies de peces y numerosos invertebrados (mariscos, moluscos, crustáceos).</li>
+        </ul>
+
+        <p>
+          También es un sitio clave de conservación para especies migratorias que descansan aquí durante sus largos viajes.
+        </p>
+
+        <h3>¿Cómo Visitar la Reserva?</h3>
+        <p>
+          Puedes explorar la reserva:
+        </p>
+        <ul>
+          <li><strong>En un tour guiado:</strong> la opción más cómoda, con transporte, paradas organizadas y explicaciones completas.</li>
+          <li><strong>En bicicleta:</strong> para los más aventureros, hay bicicletas disponibles para explorar a tu propio ritmo.</li>
+          <li><strong>Manejando tú mismo:</strong> fácil de recorrer con caminos pavimentados y bien señalizados dentro de la reserva.</li>
+        </ul>
+
+        <h3>Consejos Prácticos para tu Visita</h3>
+        <ul>
+          <li>Lleva gorra, protector solar y lentes de sol (el reflejo del desierto es intenso).</li>
+          <li>Lleva siempre suficiente agua (hay pocas tiendas dentro de la reserva).</li>
+          <li>Usa ropa ligera, pero lleva un rompevientos, ya que la brisa costera es constante.</li>
+          <li>No alimentes a los animales ni recojas conchas o piedras: es un área protegida.</li>
+        </ul>
+
+        <h3>Horarios y Entradas</h3>
+        <ul>
+          <li>Abierto todos los días, de 8:00 am a 4:00 pm.</li>
+          <li>Entrada: alrededor de S/ 11 soles (~$3 USD).</li>
+          <li>El boleto suele incluir también el acceso al muelle de las Islas Ballestas.</li>
+        </ul>
+
+        <h3>El Impacto Cultural de la Civilización Paracas</h3>
+        <p>
+          El nombre "Paracas" viene del quechua y significa "lluvia de arena", debido a los fuertes vientos de la zona. La cultura Paracas es famosa por sus textiles bordados con gran detalle, sus avanzados rituales funerarios y, por supuesto, el geoglifo del Candelabro, visible desde los botes que se dirigen a las Islas Ballestas.
+        </p>
+
+        <p>
+          Puedes aprender más sobre esta cultura en el <strong>Museo de Sitio Julio C. Tello</strong>, ubicado dentro de la reserva.
+        </p>
+
+        <h3>¿Es Apto para Familias?</h3>
+        <p>
+          ¡Por supuesto! La Reserva Nacional de Paracas es una excelente experiencia educativa y visual tanto para adultos como para niños. A los niños suele fascinarles las aves, los paisajes y la oportunidad de explorar libremente playas vacías.
+        </p>
+
+        <h3>Comparación con Otros Destinos Naturales del Perú</h3>
+        <ul>
+          <li><strong>Amazonía:</strong> selva tropical, humedad, biodiversidad exuberante.</li>
+          <li><strong>Paracas:</strong> ecosistema marino-desértico, clima seco y paisaje costero único.</li>
+          <li><strong>Andes:</strong> gran altitud, montañas, lagunas andinas y ruinas incas.</li>
+        </ul>
+        <p>
+          Paracas es ideal para quienes buscan una experiencia costera completamente distinta a la típica ruta Cusco-Machu Picchu.
+        </p>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Se puede visitar todo el año?</strong> Sí, tiene clima seco durante todo el año, con muy poca lluvia.</p>
+        <p><strong>¿Cuánto tiempo debo planificar?</strong> Se recomienda al menos medio día (4-5 horas) para disfrutar los principales atractivos.</p>
+        <p><strong>¿Se permite acampar?</strong> No, no está permitido pernoctar dentro de la reserva.</p>
+        <p><strong>¿Se necesita un guía?</strong> No es obligatorio, pero tener un guía mejora mucho la experiencia.</p>
+
+        <h3>Reflexión Final</h3>
+        <p>
+          La Reserva Nacional de Paracas es una impresionante combinación de naturaleza, historia y paisajes dramáticos. Desde sus playas rojas y su vida marina hasta su patrimonio cultural, ofrece una experiencia que combina aventura, aprendizaje y pura contemplación. Una parada obligatoria en la ruta costera del Perú.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>Paracas National Reserve: Complete Guide for Your Visit</h2>

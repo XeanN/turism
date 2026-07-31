@@ -15,7 +15,8 @@
     text-decoration: none;
     color: var(--heading-color);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
 }
 .nav__item a:hover{
     color: inherit;

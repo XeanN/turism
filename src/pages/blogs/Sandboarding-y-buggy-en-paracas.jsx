@@ -1,6 +1,114 @@
 import React from "react";
 
-const Blog2 = () => {
+const Blog2 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Aventura en el Desierto: Sandboarding y Buggy en Paracas</h2>
+
+        <p>
+          Si buscas emociones fuertes durante tu visita a Paracas, no puedes dejar pasar la oportunidad de vivir el buggy y el sandboarding en las imponentes dunas del desierto costero del Perú. Paracas no es solo mar; también es desierto, adrenalina y paisajes inolvidables que parecen sacados de otro mundo.
+        </p>
+
+        <h3>¿Por qué Paracas es un destino perfecto para el sandboarding?</h3>
+        <p>
+          Las dunas de Paracas forman parte del desierto costero del Perú, muy cerca del oasis de Huacachina. Pero a diferencia de otros destinos, aquí encontrarás amplias colinas de arena suave, perfectas tanto para principiantes como para expertos. La cercanía al mar crea un contraste visual único: arena dorada, cielo azul y el océano Pacífico de fondo.
+        </p>
+
+        <h3>El Paseo en Buggy: Pura Adrenalina</h3>
+        <p>
+          El tour comienza en los alrededores de Paracas. Después de una breve charla de seguridad, abordarás un buggy especialmente diseñado para enfrentar las enormes dunas. Estos vehículos cuentan con motores potentes, jaulas de seguridad y arneses que garantizan un paseo seguro pero sumamente emocionante.
+        </p>
+
+        <p>Durante el paseo en buggy:</p>
+        <ul>
+          <li>Subirás dunas de más de 100 metros de altura.</li>
+          <li>Vivirás descensos pronunciados, giros cerrados y saltos.</li>
+          <li>Disfrutarás de vistas panorámicas impresionantes.</li>
+        </ul>
+
+        <p>
+          Muchos visitantes comparan la experiencia con una montaña rusa, pero en medio del desierto. Sin duda, esta es la parte más emocionante del tour.
+        </p>
+
+        <h3>Sandboarding: Desliza por las Dunas Gigantes</h3>
+        <p>
+          Después de la primera parte en buggy, es hora de saltar al sandboarding. Este deporte es muy similar al snowboard, pero sobre arena. Deslizarse por colinas doradas es una sensación única.
+        </p>
+
+        <ul>
+          <li>Puedes deslizarte de pie (como en snowboard), sentado o acostado (más seguro para principiantes).</li>
+          <li>Las tablas están especialmente adaptadas para arena, con cera para mayor velocidad.</li>
+          <li>Los instructores te enseñarán la técnica básica para que controles la velocidad y la dirección.</li>
+        </ul>
+
+        <p>
+          No te preocupes si es tu primera vez: el sandboarding es apto para principiantes, y los guías siempre priorizan tu seguridad.
+        </p>
+
+        <h3>Consejos para disfrutar al máximo el tour</h3>
+        <ul>
+          <li>Lleva lentes de sol: el viento puede levantar arena hacia tus ojos.</li>
+          <li>Usa protector solar de alta protección.</li>
+          <li>Usa ropa cómoda, de secado rápido y calzado cerrado (evita las sandalias).</li>
+          <li>Si llevas cámara, protege los lentes de la arena con fundas.</li>
+          <li>No comas en exceso antes del paseo en buggy si eres propenso al mareo.</li>
+        </ul>
+
+        <h3>¿Es peligroso? ¿Quién puede participar?</h3>
+        <p>
+          La mayoría de los tours están diseñados para ser seguros siempre que se sigan las instrucciones. Sin embargo, no se recomienda para:
+        </p>
+        <ul>
+          <li>Personas con problemas de cuello o espalda.</li>
+          <li>Mujeres embarazadas.</li>
+          <li>Personas con afecciones cardíacas graves.</li>
+        </ul>
+        <p>
+          Para la mayoría de los viajeros, es una experiencia segura, divertida y absolutamente inolvidable.
+        </p>
+
+        <h3>Atardecer sobre las Dunas: El Final Perfecto</h3>
+        <p>
+          Muchos tours terminan al atardecer, justo cuando el sol pinta el cielo de tonos dorados, rosados y naranjas. Las largas sombras sobre las dunas crean una escena mágica, perfecta para cerrar el día con una postal inolvidable.
+        </p>
+
+        <h3>¿Paracas o Huacachina: cuál es mejor para el sandboarding?</h3>
+        <p>
+          Ambas zonas son excelentes, pero cada una tiene su propio encanto:
+        </p>
+        <ul>
+          <li><strong>Huacachina:</strong> más famoso, más turístico, con dunas más grandes y buggies más agresivos.</li>
+          <li><strong>Paracas:</strong> menos concurrido, con vistas al mar, rutas más personalizadas y una experiencia más exclusiva.</li>
+        </ul>
+        <p>
+          Si ya te estás hospedando en Paracas, sin duda vale la pena vivir esta aventura aquí sin necesidad de viajar hasta Ica.
+        </p>
+
+        <h3>Historia del Sandboarding en el Perú</h3>
+        <p>
+          Aunque relativamente nuevo como actividad turística, el sandboarding en el Perú se popularizó desde finales de los años 90, especialmente gracias a competencias internacionales realizadas en las dunas peruanas. Paracas y Huacachina incluso han sido sede de eventos del circuito mundial de sandboard.
+        </p>
+
+        <h3>Operadores Recomendados</h3>
+        <p>
+          En Turismo Náutico Paracas trabajamos con guías certificados, vehículos de última generación y protocolos internacionales de seguridad. Puedes ver toda nuestra oferta de tours <a href="https://turismonauticoparacas.com" target="_blank" rel="noopener noreferrer">aquí</a>.
+        </p>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Cuál es el mejor horario para hacer el tour?</strong> Los mejores momentos son temprano por la mañana (9:00 am) o al final de la tarde para el atardecer (4:00 pm).</p>
+        <p><strong>¿El sandboarding es solo para jóvenes?</strong> No, personas de todas las edades pueden participar siempre que no tengan restricciones físicas importantes.</p>
+        <p><strong>¿Se necesita experiencia previa?</strong> No, los guías dan instrucciones completas incluso para principiantes totales.</p>
+        <p><strong>¿Se requiere seguro de viaje?</strong> No es obligatorio, pero siempre es recomendable tener un seguro activo durante actividades de aventura.</p>
+
+        <h3>Conclusión Final</h3>
+        <p>
+          Si quieres combinar aventura, adrenalina y paisajes únicos en el Perú, el tour de buggy y sandboarding en Paracas es una experiencia imperdible. Ya sea que busques velocidad extrema o simplemente un deslizamiento suave por la arena, este tour te dejará recuerdos inolvidables. Reserva con anticipación y prepárate para vivir el desierto como nunca antes.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>Desert Adventure: Sandboarding and Buggy in Paracas</h2>

@@ -22,8 +22,75 @@ import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
 import Testimonial from "../components/Testimonial/Testimonial";
 import Newsletter from "../shared/Newsletter";
+import { useLanguage } from "../context/LanguageContext";
+
+const text = {
+  en: {
+    metaTitle: "Turismo Nautico Paracas | Tours to Ballestas Islands, Reserve and Nazca",
+    metaDescription:
+      "Tour agency in Paracas: Ballestas Islands, Paracas National Reserve, sandboarding in Huacachina, private yachts and Nazca Lines flights.",
+    smallText: "south Perú",
+    heroTitle: "Turismo Nautico Paracas",
+    explore: "Explore",
+    featuredTitle: "Our featured tours",
+    sailWithUs: "Sail With Us",
+    experienceTitle: (
+      <>
+        With our all experience <br /> we will serve you
+      </>
+    ),
+    experienceText: (
+      <>
+        Turismo Nautico Paracas is a company focused on tourism and
+        <br />
+        founded by expert guides of Peru.
+      </>
+    ),
+    trips: "Successful trip",
+    clients: "Regular clients",
+    years: "Years experience",
+    galleryLabel: "Gallery",
+    galleryTitle: "Visit our customers tour gallery",
+    clientsLabel: "Clients",
+    testimonialTitle: "Discover What Our Clients Have to Say",
+  },
+  es: {
+    metaTitle: "Turismo Nautico Paracas | Tours en Islas Ballestas, Reserva y Nazca",
+    metaDescription:
+      "Agencia de turismo en Paracas: tours a Islas Ballestas, Reserva Nacional de Paracas, sandboarding en Huacachina, yates privados y sobrevuelo a las Líneas de Nazca.",
+    smallText: "sur del Perú",
+    heroTitle: "Turismo Nautico Paracas",
+    explore: "Explora",
+    featuredTitle: "Nuestros tours destacados",
+    sailWithUs: "Navega con Nosotros",
+    experienceTitle: (
+      <>
+        Con toda nuestra experiencia <br /> te vamos a atender
+      </>
+    ),
+    experienceText: (
+      <>
+        Turismo Nautico Paracas es una empresa enfocada en el turismo
+        <br />y fundada por guías expertos del Perú.
+      </>
+    ),
+    trips: "Viajes exitosos",
+    clients: "Clientes recurrentes",
+    years: "Años de experiencia",
+    galleryLabel: "Galería",
+    galleryTitle: "Visita la galería de tours de nuestros clientes",
+    clientsLabel: "Clientes",
+    testimonialTitle: "Descubre lo que dicen nuestros clientes",
+  },
+};
 
 const Home = () => {
+  const lang = useLanguage();
+  const t = text[lang];
+  const canonicalUrl =
+    lang === "es"
+      ? "https://turismonauticoparacas.com/es/home"
+      : "https://turismonauticoparacas.com/home";
   const sliderImages = [slider1, slider2, slider3, slider4, slider5];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -46,7 +113,7 @@ const Home = () => {
     "@type": "TravelAgency",
     name: "Turismo Nautico Paracas",
     image: "https://turismonauticoparacas.com/extras.png",
-    url: "https://turismonauticoparacas.com/home",
+    url: canonicalUrl,
     telephone: "+51-956-481-002",
     address: {
       "@type": "PostalAddress",
@@ -60,20 +127,19 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Turismo Nautico Paracas | Tours en Islas Ballestas, Reserva y Nazca</title>
-        <meta
-          name="description"
-          content="Agencia de turismo en Paracas: tours a Islas Ballestas, Reserva Nacional de Paracas, sandboarding en Huacachina, yates privados y sobrevuelo a las Líneas de Nazca."
-        />
-        <link rel="canonical" href="https://turismonauticoparacas.com/home" />
-        <meta property="og:title" content="Turismo Nautico Paracas" />
-        <meta
-          property="og:description"
-          content="Tours a Islas Ballestas, Reserva Nacional de Paracas, sandboarding y yates privados en la costa sur del Perú."
-        />
+        <html lang={lang} />
+        <title>{t.metaTitle}</title>
+        <meta name="description" content={t.metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="en" href="https://turismonauticoparacas.com/home" />
+        <link rel="alternate" hrefLang="es" href="https://turismonauticoparacas.com/es/home" />
+        <link rel="alternate" hrefLang="x-default" href="https://turismonauticoparacas.com/home" />
+        <meta property="og:title" content={t.metaTitle} />
+        <meta property="og:description" content={t.metaDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://turismonauticoparacas.com/home" />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content="https://turismonauticoparacas.com/extras.png" />
+        <meta property="og:locale" content={lang === "es" ? "es_PE" : "en_US"} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
@@ -107,12 +173,8 @@ const Home = () => {
         </div>
         <div className="homeContent container">
           <div className="textDiv">
-            <span className="smallText">
-              south Perú
-            </span>
-            <h1 className="homeTitle">
-              Turismo Nautico Paracas
-            </h1>
+            <span className="smallText">{t.smallText}</span>
+            <h1 className="homeTitle">{t.heroTitle}</h1>
           </div>
         </div>
       </section>
@@ -177,8 +239,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="mb-5">
-              <Subtitle subtitle={"Explore"} />
-              <h2 className="featured__tour-title">Our featured tours</h2>
+              <Subtitle subtitle={t.explore} />
+              <h2 className="featured__tour-title">{t.featuredTitle}</h2>
             </Col>
             <FeaturedTourList />
           </Row>
@@ -191,17 +253,10 @@ const Home = () => {
           <Row>
             <Col lg="6">
               <div className="experience__content">
-                <Subtitle subtitle={"Sail With Us"} />
+                <Subtitle subtitle={t.sailWithUs} />
 
-                <h2>
-                  With our all experience <br />
-                  we will serve you
-                </h2>
-                <p>
-                  Turismo Nautico Paracas is a company focused on tourism and
-                  <br />
-                  founded by expert guides of Peru.
-                </p>
+                <h2>{t.experienceTitle}</h2>
+                <p>{t.experienceText}</p>
               </div>
 
               <div
@@ -210,17 +265,17 @@ const Home = () => {
               >
                 <div className="counter__box">
                   <span>10k+</span>
-                  <h6>Successful trip</h6>
+                  <h6>{t.trips}</h6>
                 </div>
 
                 <div className="counter__box">
                   <span>4k+</span>
-                  <h6>Regular clients</h6>
+                  <h6>{t.clients}</h6>
                 </div>
 
                 <div className="counter__box">
                   <span>21</span>
-                  <h6>Years experience</h6>
+                  <h6>{t.years}</h6>
                 </div>
               </div>
             </Col>
@@ -240,10 +295,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12">
-              <Subtitle subtitle={"Gallery"} />
-              <h2 className="gallery_title">
-                Visit our customers tour gallery
-              </h2>
+              <Subtitle subtitle={t.galleryLabel} />
+              <h2 className="gallery_title">{t.galleryTitle}</h2>
             </Col>
             <Col lg="12">
               <MasonryImagesGallery />
@@ -258,10 +311,8 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12">
-              <Subtitle subtitle={"Clients"} />
-              <h2 className="testimonial__title">
-                Discover What Our Clients Have to Say
-              </h2>
+              <Subtitle subtitle={t.clientsLabel} />
+              <h2 className="testimonial__title">{t.testimonialTitle}</h2>
             </Col>
 
             <Col lg="12">

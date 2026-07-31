@@ -7,6 +7,12 @@ import loginImg from "../assets/images/login.png";
 import userIcon from "../assets/images/user.png";
 import { AuthContext } from "./../context/AuthContext";
 import { BASE_URL } from "./../utils/config";
+import { useLanguage, withLang } from "./../context/LanguageContext";
+
+const text = {
+  en: { title: "Login", email: "Email", password: "Password", submit: "Login", noAccount: "Don't have an account?", create: "Create" },
+  es: { title: "Iniciar sesión", email: "Correo", password: "Contraseña", submit: "Iniciar sesión", noAccount: "¿No tienes una cuenta?", create: "Crear" },
+};
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -16,6 +22,8 @@ const Login = () => {
 
   const { dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
+  const lang = useLanguage();
+  const t = text[lang];
 
   const handleChange = (e) => {
     setCredentials((prev) => ({ ...prev, [e.target.id]: e.target.value }));
@@ -42,7 +50,7 @@ const Login = () => {
 
       if (result.success) {
         dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
-        navigate("/");
+        navigate(withLang("/", lang));
       } else {
         return alert(result.message);
       }
@@ -65,13 +73,13 @@ const Login = () => {
                 <div className="user">
                   <img src={userIcon} alt="Ícono de usuario" />
                 </div>
-                <h2>Login</h2>
+                <h2>{t.title}</h2>
 
                 <Form onSubmit={handleClick}>
                   <FormGroup>
                     <input
                       type="email"
-                      placeholder="Email"
+                      placeholder={t.email}
                       required
                       id="email"
                       onChange={handleChange}
@@ -80,7 +88,7 @@ const Login = () => {
                   <FormGroup>
                     <input
                       type="password"
-                      placeholder="Password"
+                      placeholder={t.password}
                       required
                       id="password"
                       onChange={handleChange}
@@ -90,11 +98,11 @@ const Login = () => {
                     className="btn secondary__btn auth__btn"
                     type="submit"
                   >
-                    Login
+                    {t.submit}
                   </Button>
                 </Form>
                 <p>
-                  Don't have an account? <Link to="/register">Create</Link>
+                  {t.noAccount} <Link to={withLang("/register", lang)}>{t.create}</Link>
                 </p>
               </div>
             </div>

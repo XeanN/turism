@@ -1,6 +1,156 @@
 import React from "react";
 
-const Blog6 = () => {
+const Blog6 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Alquiler de Yates en Paracas: Lujo y Libertad en el Mar</h2>
+
+        <p>
+          ¿Sueñas con navegar el Pacífico peruano a tu propio ritmo, disfrutando de privacidad, comodidad y paisajes impresionantes? Bienvenido al <strong>Alquiler de Yates en Paracas</strong>, una experiencia exclusiva diseñada para quienes buscan lujo, flexibilidad y aventura marina de primer nivel. Aquí tienes todo lo que necesitas saber para planear este viaje inolvidable por uno de los destinos costeros más hermosos de Sudamérica.
+        </p>
+
+        <h3>¿Qué es exactamente un Alquiler de Yate?</h3>
+        <p>
+          A diferencia de los tours tradicionales, un alquiler privado de yate te permite rentar una embarcación completa con tripulación profesional, definir tu propio itinerario, decidir la duración del viaje y disfrutar del mar en exclusiva con tu familia, pareja, amigos o invitados VIP. <br />
+          Es ideal para:
+        </p>
+        <ul>
+          <li>Celebraciones especiales: cumpleaños, aniversarios, propuestas de matrimonio o despedidas de soltero/a.</li>
+          <li>Producciones profesionales de fotos o video.</li>
+          <li>Salidas corporativas, eventos empresariales exclusivos o reuniones privadas.</li>
+          <li>Simplemente desconectar del mundo en un entorno privado, lujoso y natural.</li>
+        </ul>
+
+        <h3>¿Qué Rutas y Actividades Puedes Personalizar?</h3>
+        <p>Las opciones de navegación privada en Paracas te permiten adaptar la experiencia a tus intereses:</p>
+
+        <h4>⚓ Navegación por la Costa de la Reserva Nacional de Paracas</h4>
+        <p>Navegarás por el desierto costero, observando acantilados únicos, formaciones geológicas y playas escondidas, accesibles solo por mar.</p>
+
+        <h4>⚓ Excursión a las Islas Ballestas</h4>
+        <p>Con tu propio yate, puedes disfrutar de los avistamientos de fauna marina sin el apuro de los tours grupales:</p>
+        <ul>
+          <li>Pingüinos de Humboldt</li>
+          <li>Grandes colonias de Lobos Marinos</li>
+          <li>Aves guaneras (piqueros, pelícanos, zarcillos)</li>
+          <li>Visita al geoglifo del <strong>Candelabro de Paracas</strong></li>
+        </ul>
+
+        <h4>⚓ Rutas Personalizadas a Islas Privadas o Zonas Autorizadas</h4>
+        <p>Dependiendo de los permisos de SERNANP, puedes planificar rutas más largas o técnicas (ideal para científicos, documentalistas o fotógrafos).</p>
+
+        <h4>⚓ Snorkel y Actividades Acuáticas</h4>
+        <p>Muchos paquetes ofrecen tiempo libre para nadar, hacer snorkel o simplemente disfrutar del yate anclado cerca de una playa apartada, todo con seguridad supervisada.</p>
+
+        <h3>Características del Yate</h3>
+
+        <ul>
+          <li>Capacidad para 10 a 29 pasajeros según el modelo de yate.</li>
+          <li>Tripulación profesional con capitán y asistente a bordo.</li>
+          <li>Cabina interior con aire acondicionado, baños privados y áreas de descanso con sombra.</li>
+          <li>Cubierta superior ideal para tomar el sol y disfrutar vistas panorámicas.</li>
+          <li>Sistema de sonido a bordo (conecta tu propia música).</li>
+          <li>Servicio de bar y catering opcional bajo pedido.</li>
+        </ul>
+
+        <h3>¿Cuánto Dura un Alquiler de Yate Privado en Paracas?</h3>
+        <p>La duración mínima suele ser de 2 horas, pero puedes extenderla en bloques adicionales según tu preferencia:</p>
+        <ul>
+          <li><strong>2 horas:</strong> ruta básica de Ballestas + costa</li>
+          <li><strong>4 horas:</strong> crucero más relajado con tiempo de anclaje</li>
+          <li><strong>Medio día o día completo:</strong> experiencias premium para eventos completos</li>
+        </ul>
+
+        <h3>Beneficios de Elegir un Yate Privado frente a un Tour Grupal</h3>
+        <ul>
+          <li>Privacidad absoluta.</li>
+          <li>Control total sobre el ritmo, el horario y las paradas.</li>
+          <li>Más comodidad (sin desconocidos a bordo).</li>
+          <li>Perfecto para fotografía sin interrupciones turísticas.</li>
+          <li>Espacio seguro para familias con niños pequeños.</li>
+          <li>Flexibilidad total en los horarios de salida.</li>
+        </ul>
+
+        <h3>💡 Experiencias Especiales que Puedes Organizar a Bordo:</h3>
+        <ul>
+          <li>Cócteles al atardecer con catering exclusivo y música.</li>
+          <li>Propuestas de matrimonio con decoración romántica en el mar.</li>
+          <li>Fiestas privadas o sesiones de yoga frente al océano.</li>
+          <li>Sesiones de fotografía profesional con drone (con permiso previo).</li>
+          <li>Filmaciones para documentales de naturaleza o producciones comerciales.</li>
+        </ul>
+
+        <h3>Consejos Prácticos para Organizar tu Alquiler de Yate</h3>
+        <ul>
+          <li>Reserva con anticipación, especialmente en feriados largos o temporada alta.</li>
+          <li>Solicita servicios extra de catering o decoración para una experiencia completa.</li>
+          <li>Lleva protector solar, gorra, lentes de sol, cámara profesional y ropa ligera.</li>
+          <li>Revisa las condiciones climáticas; las aguas de Paracas suelen ser tranquilas, pero entre julio y agosto los vientos favorecen las salidas tempranas.</li>
+          <li>Si quieres combinarlo con un vuelo a las Líneas de Nazca el mismo día, es posible coordinar ambos programas.</li>
+        </ul>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Puedo llevar mi propia comida y bebidas?</strong> Depende de cada operador, pero la mayoría permite catering personalizado con arreglo previo.</p>
+        <p><strong>¿Es apto para niños pequeños o personas mayores?</strong> Por supuesto. El acceso es seguro y cómodo; se recomienda supervisión durante la navegación para niños pequeños.</p>
+        <p><strong>¿Necesito saber nadar?</strong> No. Aunque hay snorkel opcional disponible, el tour es principalmente panorámico.</p>
+        <p><strong>¿Se requieren permisos especiales?</strong> Los operadores formales gestionan los permisos de navegación. Solo para filmación aérea profesional o zonas restringidas se coordinan permisos adicionales.</p>
+
+        <h3>Comparación: Yate Privado vs Tour Convencional</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Tour Grupal</th>
+              <th>Yate Privado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capacidad</td>
+              <td>40-50 pasajeros</td>
+              <td>10-29 pasajeros (grupo propio)</td>
+            </tr>
+            <tr>
+              <td>Duración</td>
+              <td>Fija</td>
+              <td>Flexible</td>
+            </tr>
+            <tr>
+              <td>Horario</td>
+              <td>Preestablecido</td>
+              <td>Personalizado</td>
+            </tr>
+            <tr>
+              <td>Atención del Guía</td>
+              <td>Compartida entre el grupo</td>
+              <td>Totalmente dedicada</td>
+            </tr>
+            <tr>
+              <td>Privacidad</td>
+              <td>Ninguna</td>
+              <td>Absoluta</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>🌅 ¿Vale la Pena un Alquiler de Yate en Paracas?</h3>
+        <p>
+          Absolutamente. Navegar el océano Pacífico en un entorno íntimo, rodeado de paisajes desérticos, fauna marina espectacular, clima templado y todo el lujo de un yate privado es una experiencia incomparable. <br /><br />
+          Además, <strong>Paracas es uno de los pocos destinos accesibles del Perú donde puedes disfrutar de este tipo de lujo costero sin tener que viajar a lugares lejanos como Galápagos o el Caribe.</strong>
+        </p>
+
+        <h3>Conclusión Final</h3>
+        <p>
+          El <strong>Alquiler de Yates en Paracas</strong> transforma un simple recorrido turístico en una experiencia exclusiva, personalizada y hecha completamente a tu medida.
+          Si buscas máxima comodidad, privacidad, servicio premium y libertad para navegar sin restricciones, esta es sin duda la mejor opción para elevar tu visita a Paracas a otro nivel.
+          <br /><br />
+          <strong>Reserva con anticipación. El Pacífico peruano te espera.</strong> 🚤✨🌅
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>Yacht Charter in Paracas: Luxury and Freedom at Sea</h2>
@@ -141,8 +291,8 @@ const Blog6 = () => {
 
       <h3>Final Conclusion</h3>
       <p>
-        The <strong>Yacht Charter in Paracas</strong> transforms a simple sightseeing tour into an exclusive, personalized, fully tailored experience.  
-        If you're seeking maximum comfort, privacy, premium service, and the freedom to navigate without restrictions, this is undoubtedly the best option to elevate your Paracas visit to another level.  
+        The <strong>Yacht Charter in Paracas</strong> transforms a simple sightseeing tour into an exclusive, personalized, fully tailored experience.
+        If you're seeking maximum comfort, privacy, premium service, and the freedom to navigate without restrictions, this is undoubtedly the best option to elevate your Paracas visit to another level.
         <br /><br />
         <strong>Book in advance. The Peruvian Pacific awaits you.</strong> 🚤✨🌅
       </p>

@@ -3,12 +3,14 @@ import { Card, CardBody } from "reactstrap";
 import { Link } from "react-router-dom";
 import calculateAvgRating from "../utils/avgRating";
 import { BASE_URL } from "../utils/config";
+import { findTourSeoById } from "../assets/data/toursSeo";
 import "./tour-card.css";
 
 const TourCard = ({ tour }) => {
   const { id, title, city, photo, price, featured, reviews, pricingType } = tour;
   const imagePath = BASE_URL + photo;
   const { totalRating, avgRating } = calculateAvgRating(reviews);
+  const tourUrl = `/tours/${findTourSeoById(id)?.slug || id}`;
 
   return (
     <div className="tour__card">
@@ -35,7 +37,7 @@ const TourCard = ({ tour }) => {
             </span>
           </div>
           <h5 className="tour__title">
-            <Link to={`/tours/${id}`}>{title}</Link>
+            <Link to={tourUrl}>{title}</Link>
           </h5>
 
           <div className="card__bottom d-flex align-items-center justify-content-between mt-3">
@@ -44,7 +46,7 @@ const TourCard = ({ tour }) => {
             </h5>
 
             <button className="btn booking__btn">
-              <Link to={`/tours/${id}`}>Reserve Tour</Link>
+              <Link to={tourUrl}>Reserve Tour</Link>
             </button>
           </div>
         </CardBody>

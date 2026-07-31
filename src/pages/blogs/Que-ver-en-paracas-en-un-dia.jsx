@@ -1,6 +1,99 @@
 import React from "react";
 
-const Blog1 = () => {
+const Blog1 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Qué Ver en Paracas en Un Solo Día (Sin Perderte Nada)</h2>
+
+        <p>
+          Si solo tienes 24 horas para explorar Paracas, no te preocupes: es totalmente posible disfrutar de una experiencia completa, variada y memorable. Paracas ofrece naturaleza, historia, aventura, gastronomía y vistas impresionantes, todo en un itinerario perfectamente planificado. Aquí te contamos cómo organizar el día perfecto en esta joya costera del Perú.
+        </p>
+
+        <h3>Paracas: La Aventura Comienza</h3>
+        <p>
+          Paracas está ubicado a solo 3.5 horas al sur de Lima, en la región Ica. Su bahía, su desierto y su costa rica en vida marina la convierten en uno de los destinos más visitados por viajeros nacionales e internacionales. Este pequeño pueblo portuario ofrece mucho más que playas: la Reserva Nacional, las Islas Ballestas, historia preincaica y las cercanas dunas de Huacachina convierten a esta región en un verdadero paraíso multifacético.
+        </p>
+
+        <h3>Salida muy temprano desde Lima</h3>
+        <p>
+          La mayoría de los tours de día completo salen de Lima alrededor de las 4:30 a.m. Este inicio temprano permite aprovechar al máximo la luz del día y evitar el tráfico pesado de la ciudad. Si ya te estás hospedando en Paracas, tu día comienza de manera más relajada.
+        </p>
+
+        <h3>1️⃣ Paseo en bote a las <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Islas Ballestas</a></h3>
+        <p>
+          La primera parada es el muelle de El Chaco, donde abordarás un bote rumbo a las Islas Ballestas, conocidas como "las pequeñas Galápagos del Perú". Durante este paseo en bote de aproximadamente 2 horas, encontrarás:
+        </p>
+        <ul>
+          <li>El Candelabro de Paracas (un misterioso geoglifo visible desde el mar).</li>
+          <li>Pingüinos de Humboldt, lobos marinos y una amplia variedad de aves marinas.</li>
+          <li>Arcos naturales, formaciones rocosas, cuevas y hábitats únicos.</li>
+        </ul>
+        <p>
+          El recorrido suele ser tranquilo, pero puede haber viento, así que se recomienda llevar rompevientos, gorra y protector solar.
+        </p>
+
+        <h3>2️⃣ <strong>Reserva Nacional de Paracas</strong>: Desierto y Mar en Armonía</h3>
+        <p>
+          Después de regresar de las islas, la siguiente parada es la Reserva Nacional de Paracas, un área natural protegida única en el Perú. Los puntos destacados incluyen:
+        </p>
+        <ul>
+          <li>Playa Roja: famosa por su distintiva arena roja, formada por acantilados de granito erosionado.</li>
+          <li>Mirador de La Catedral: una impresionante formación rocosa, parcialmente colapsada por el terremoto de 2007, pero que sigue siendo un paisaje impactante.</li>
+          <li>Yumaque, Lagunillas y otros miradores panorámicos frente al océano Pacífico.</li>
+        </ul>
+        <p>
+          A lo largo de este recorrido, podrás ver flamencos, zarcillos, cormoranes, pelícanos y otras aves costeras.
+        </p>
+
+        <h3>3️⃣ Rumbo a Ica: Viñedos y Oasis</h3>
+        <p>
+          Después del circuito costero, el viaje continúa hacia la ciudad de Ica, a una hora de Paracas. Aquí puedes visitar bodegas tradicionales donde aprenderás sobre la famosa producción de pisco y vino del Perú. Muchas bodegas incluyen degustaciones:
+        </p>
+        <ul>
+          <li>Destilerías artesanales como "El Catador", "Tacama" o "Vista Alegre".</li>
+          <li>Aprende los procesos de fermentación, destilación y añejamiento del pisco y los vinos.</li>
+        </ul>
+
+        <h3>4️⃣ Huacachina: El Único Oasis Natural del Perú</h3>
+        <p>
+          Luego visitarás el famoso oasis de Huacachina, rodeado de imponentes dunas de arena. Aquí es donde el día se vuelve aventurero con buggies y sandboarding:
+        </p>
+        <ul>
+          <li>Paseos en buggy sobre las dunas (similar a una montaña rusa sobre arena).</li>
+          <li>Sandboarding desde las dunas más altas, ya sea de pie, sentado o acostado.</li>
+          <li>Vistas increíbles del atardecer desde lo alto de las dunas, perfectas para fotos espectaculares.</li>
+        </ul>
+
+        <h3>Consejos Prácticos para tu Día Completo</h3>
+        <ul>
+          <li>Usa ropa ligera, pero lleva una chaqueta para el frío de la madrugada.</li>
+          <li>Usa protector solar, lentes de sol, gorra y calzado cómodo.</li>
+          <li>Lleva agua y snacks, especialmente para la parte del desierto.</li>
+          <li>Protege tu cámara y celular de la arena durante el paseo en buggy.</li>
+          <li>Reserva tours con anticipación, especialmente en temporada alta (Semana Santa, feriados nacionales, vacaciones escolares).</li>
+        </ul>
+
+        <h3>¿Cuál es la Mejor Época para Visitar Paracas?</h3>
+        <p>
+          Paracas es un destino para todo el año gracias a su clima desértico templado con cielos mayormente despejados. De diciembre a abril, espera temperaturas más cálidas. De mayo a octubre, puede aparecer la famosa neblina costera ("garúa") por las mañanas, pero los tours continúan sin problema. La visibilidad marina para las Islas Ballestas es excelente casi todo el año.
+        </p>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Es apto para niños este tour?</strong> Sí, excepto el buggy y el sandboarding, recomendados desde los 7 años.</p>
+        <p><strong>¿Necesito experiencia para el sandboarding?</strong> No, los guías te enseñarán las técnicas básicas. Puedes deslizarte de pie, sentado o acostado.</p>
+        <p><strong>¿Es posible hacer todas estas actividades en un día?</strong> Sí, si reservas un tour combinado con operadores locales profesionales.</p>
+        <p><strong>¿Cuál es el costo promedio de un tour de día completo Lima-Paracas-Ica?</strong> Entre $80 y $120 USD por persona, dependiendo de la agencia y si el transporte es compartido o privado.</p>
+
+        <h3>Reflexión Final</h3>
+        <p>
+          Paracas es el destino perfecto para viajeros que buscan naturaleza marina, paisajes desérticos, aventura y cultura, todo en un mismo viaje. Incluso con un solo día, esta experiencia ofrece lo mejor de la costa sur del Perú: una combinación única de paisajes impresionantes y momentos memorables. Para disfrutar la experiencia completa, te invitamos a reservar tu próximo tour de día completo con nuestros expertos en <a href="https://turismonauticoparacas.com" target="_blank" rel="noopener noreferrer">Turismo Náutico Paracas</a>.
+        </p>
+
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>What to See in Paracas in Just One Day (Without Missing Anything)</h2>

@@ -1,176 +1,524 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
     <loc>https://turismonauticoparacas.com/home</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/home" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/home" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/home" />
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/home</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/home" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/home" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/home" />
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/tours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours" />
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/1</loc>
+    <loc>https://turismonauticoparacas.com/es/tours</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours" />
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/2</loc>
+    <loc>https://turismonauticoparacas.com/tours/fullday-paracas-and-huacachina</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/fullday-paracas-and-huacachina" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/fullday-paracas-and-huacachina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/fullday-paracas-and-huacachina" />
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/3</loc>
+    <loc>https://turismonauticoparacas.com/es/tours/fullday-paracas-and-huacachina</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/fullday-paracas-and-huacachina" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/fullday-paracas-and-huacachina" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/fullday-paracas-and-huacachina" />
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/islas-ballestas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/islas-ballestas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/islas-ballestas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/islas-ballestas" />
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/islas-ballestas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/islas-ballestas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/islas-ballestas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/islas-ballestas" />
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/private-tour-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/private-tour-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/private-tour-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/private-tour-paracas" />
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/4</loc>
+    <loc>https://turismonauticoparacas.com/es/tours/private-tour-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/private-tour-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/private-tour-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/private-tour-paracas" />
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/5</loc>
+    <loc>https://turismonauticoparacas.com/tours/yacht-charter-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/yacht-charter-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/yacht-charter-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/yacht-charter-paracas" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/yacht-charter-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/yacht-charter-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/yacht-charter-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/yacht-charter-paracas" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/special-services-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/special-services-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/special-services-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/special-services-paracas" />
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/6</loc>
-    <priority>0.7</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://turismonauticoparacas.com/tours/7</loc>
-    <priority>0.7</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://turismonauticoparacas.com/tours/8</loc>
+    <loc>https://turismonauticoparacas.com/es/tours/special-services-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/special-services-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/special-services-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/special-services-paracas" />
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/9</loc>
+    <loc>https://turismonauticoparacas.com/tours/ballestas-island-and-nature-reserve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/ballestas-island-and-nature-reserve" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/ballestas-island-and-nature-reserve" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/ballestas-island-and-nature-reserve" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/ballestas-island-and-nature-reserve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/ballestas-island-and-nature-reserve" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/ballestas-island-and-nature-reserve" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/ballestas-island-and-nature-reserve" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/tpp-paracas-all-inclusive-tour</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/tpp-paracas-all-inclusive-tour" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/tpp-paracas-all-inclusive-tour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/tpp-paracas-all-inclusive-tour" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/tpp-paracas-all-inclusive-tour</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/tpp-paracas-all-inclusive-tour" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/tpp-paracas-all-inclusive-tour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/tpp-paracas-all-inclusive-tour" />
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/chan-chan-trujillo-salaverry</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/chan-chan-trujillo-salaverry" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/chan-chan-trujillo-salaverry" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/chan-chan-trujillo-salaverry" />
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/chan-chan-trujillo-salaverry</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/chan-chan-trujillo-salaverry" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/chan-chan-trujillo-salaverry" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/chan-chan-trujillo-salaverry" />
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/paracas-national-reserve-private-tour</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/paracas-national-reserve-private-tour" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/paracas-national-reserve-private-tour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/paracas-national-reserve-private-tour" />
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/26</loc>
+    <loc>https://turismonauticoparacas.com/es/tours/paracas-national-reserve-private-tour</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/paracas-national-reserve-private-tour" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/paracas-national-reserve-private-tour" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/paracas-national-reserve-private-tour" />
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/nazca-lines</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/nazca-lines" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/nazca-lines" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/nazca-lines" />
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/27</loc>
+    <loc>https://turismonauticoparacas.com/es/tours/nazca-lines</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/nazca-lines" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/nazca-lines" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/nazca-lines" />
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/mini-buggies-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/mini-buggies-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/mini-buggies-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/mini-buggies-paracas" />
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/tours/mini-buggies-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/tours/mini-buggies-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/tours/mini-buggies-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/tours/mini-buggies-paracas" />
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/about" />
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/about" />
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/contact" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/contact" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/gallery" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/gallery" />
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/gallery" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/gallery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/gallery" />
     <priority>0.4</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs" />
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs" />
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/what-to-see-in-paracas-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day" />
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/what-to-see-in-paracas-in-one-day</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/what-to-see-in-paracas-in-one-day" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day" />
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/sandboarding-and-buggy-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas" />
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/sandboarding-and-buggy-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/sandboarding-and-buggy-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas" />
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/paracas-national-reserve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/paracas-national-reserve" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/paracas-national-reserve" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/paracas-national-reserve" />
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/paracas-national-reserve</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/paracas-national-reserve" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/paracas-national-reserve" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/paracas-national-reserve" />
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/ballestas-islands-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/ballestas-islands-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/ballestas-islands-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/ballestas-islands-paracas" />
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/ballestas-islands-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/ballestas-islands-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/ballestas-islands-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/ballestas-islands-paracas" />
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/private-tour-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/private-tour-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/private-tour-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/private-tour-in-paracas" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/private-tour-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/private-tour-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/private-tour-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/private-tour-in-paracas" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/yacht-charter-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/yacht-charter-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/yacht-charter-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/special-services-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/special-services-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/special-services-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/special-services-in-paracas" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/special-services-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/special-services-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/special-services-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/special-services-in-paracas" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/nazca-lines-from-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/nazca-lines-from-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/nazca-lines-from-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/marine-fauna-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/marine-fauna-in-paracas</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/marine-fauna-in-paracas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/nazca-lines-from-pisco" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco" />
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/nazca-lines-from-pisco</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/nazca-lines-from-pisco" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco" />
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/montesierpe</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/montesierpe" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/montesierpe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/montesierpe" />
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/montesierpe</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/montesierpe" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/montesierpe" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/montesierpe" />
     <priority>0.4</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://turismonauticoparacas.com/blogs/guano-collectors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/guano-collectors" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/guano-collectors" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/guano-collectors" />
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/es/blogs/guano-collectors</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://turismonauticoparacas.com/blogs/guano-collectors" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://turismonauticoparacas.com/es/blogs/guano-collectors" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://turismonauticoparacas.com/blogs/guano-collectors" />
     <priority>0.4</priority>
     <changefreq>monthly</changefreq>
   </url>

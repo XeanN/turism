@@ -10,8 +10,31 @@ import { Container, Row, Col } from "reactstrap";
 
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
+import { useLanguage } from "../context/LanguageContext";
+
+const text = {
+  en: {
+    metaTitle: "All Tours in Paracas | Turismo Nautico Paracas",
+    metaDescription: "Discover all our tours in Paracas: Ballestas Islands, National Reserve, Nazca, private yachts and more. Book your adventure on the southern coast of Peru.",
+    pageTitle: "All Tours",
+    loading: "Loading.....",
+    noTours: "No tours available.",
+  },
+  es: {
+    metaTitle: "Todos los Tours en Paracas | Turismo Nautico Paracas",
+    metaDescription: "Descubre todos nuestros tours en Paracas: Islas Ballestas, Reserva Nacional, Nazca, yates privados y más. Reserva tu aventura en la costa sur del Perú.",
+    pageTitle: "Todos los Tours",
+    loading: "Cargando.....",
+    noTours: "No hay tours disponibles.",
+  },
+};
 
 const Tours = () => {
+  const lang = useLanguage();
+  const t = text[lang];
+  const canonicalUrl = lang === "es"
+    ? "https://turismonauticoparacas.com/es/tours"
+    : "https://turismonauticoparacas.com/tours";
   const [pageCount, setPageCount] = useState(0);
   const [page, setPage] = useState(0);
 
@@ -35,21 +58,18 @@ const Tours = () => {
   return (
     <>
       <Helmet>
-        <title>Todos los Tours en Paracas | Turismo Nautico Paracas</title>
-        <meta
-          name="description"
-          content="Descubre todos nuestros tours en Paracas: Islas Ballestas, Reserva Nacional, Nazca, yates privados y más. Reserva tu aventura en la costa sur del Perú."
-        />
-        <link rel="canonical" href="https://turismonauticoparacas.com/tours" />
-        <meta property="og:title" content="Todos los Tours en Paracas" />
-        <meta
-          property="og:description"
-          content="Islas Ballestas, Reserva Nacional de Paracas, Nazca y más tours disponibles."
-        />
+        <title>{t.metaTitle}</title>
+        <meta name="description" content={t.metaDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="en" href="https://turismonauticoparacas.com/tours" />
+        <link rel="alternate" hrefLang="es" href="https://turismonauticoparacas.com/es/tours" />
+        <link rel="alternate" hrefLang="x-default" href="https://turismonauticoparacas.com/tours" />
+        <meta property="og:title" content={t.metaTitle} />
+        <meta property="og:description" content={t.metaDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://turismonauticoparacas.com/tours" />
+        <meta property="og:url" content={canonicalUrl} />
       </Helmet>
-      <CommonSection title={"All Tours"} />
+      <CommonSection title={t.pageTitle} />
       <section>
         <Container>
           <Row>
@@ -60,7 +80,7 @@ const Tours = () => {
 
       <section className="pt-0">
         <Container>
-          {loading && <h4 className="text-center pt-5">Loading.....</h4>}
+          {loading && <h4 className="text-center pt-5">{t.loading}</h4>}
           {error && <h4 className="text-center pt-5">{error}</h4>}
           {!loading && !error && (
             <Row>
@@ -72,7 +92,7 @@ const Tours = () => {
                 ))
               ) : (
                 <Col lg="12">
-                  <p className="text-center">No tours available.</p>
+                  <p className="text-center">{t.noTours}</p>
                 </Col>
               )}
 

@@ -6,8 +6,34 @@ import { Form, FormGroup, ListGroup, ListGroupItem, Button } from "reactstrap";
 //import { useNavigate } from "react-router-dom";
 //import { AuthContext } from "../../context/AuthContext";
 import { BASE_URL } from "../../utils/config";
+import { useLanguage } from "../../context/LanguageContext";
+
+const text = {
+  en: {
+    information: "Information",
+    fullName: "Full Name",
+    phone: "Phone",
+    guests: "Guest",
+    total: "Total",
+    reserveNow: "Reserve Now",
+    whatsappMessage: (booking) =>
+      `Hi! I am interested in booking the tour. My name is ${booking.fullName}, my phone is ${booking.phone} and I want to book ${booking.guestSize} guest(s).`,
+  },
+  es: {
+    information: "Información",
+    fullName: "Nombre Completo",
+    phone: "Teléfono",
+    guests: "Personas",
+    total: "Total",
+    reserveNow: "Reservar Ahora",
+    whatsappMessage: (booking) =>
+      `¡Hola! Estoy interesado/a en reservar el tour. Mi nombre es ${booking.fullName}, mi teléfono es ${booking.phone} y quiero reservar para ${booking.guestSize} persona(s).`,
+  },
+};
 
 const Booking = ({ tour, avgRating }) => {
+  const lang = useLanguage();
+  const t = text[lang];
   const { id, price, reviews, pricingType } = tour;
   //const navigate = useNavigate();
 
@@ -58,7 +84,7 @@ const Booking = ({ tour, avgRating }) => {
 
       if (result.success) {
         //const tourName = result.tourName;
-        const whatsappMessage =`Hi! I am interested in booking the tour. My name is ${booking.fullName}, my phone is ${booking.phone} and I want to book ${booking.guestSize} guest(s).`;
+        const whatsappMessage = t.whatsappMessage(booking);
         const encodedMessage = encodeURIComponent(whatsappMessage);
         window.location.href = `https://wa.me/+51940578027/?text=${encodedMessage}`;
       } else {
@@ -83,13 +109,13 @@ const Booking = ({ tour, avgRating }) => {
 
       {/* =============== booking form start ================== */}
       <div className="booking__form">
-        <h5>Information</h5>
+        <h5>{t.information}</h5>
         <p></p>
         <Form className="booking__info-form" onSubmit={handleClick}>
           <FormGroup>
             <input
               type="text"
-              placeholder="Full Name"
+              placeholder={t.fullName}
               id="fullName"
               required
               onChange={handleChange}
@@ -98,7 +124,7 @@ const Booking = ({ tour, avgRating }) => {
           <FormGroup>
             <input
               type="number"
-              placeholder="Phone"
+              placeholder={t.phone}
               id="phone"
               required
               onChange={handleChange}
@@ -114,7 +140,7 @@ const Booking = ({ tour, avgRating }) => {
             />
             <input
               type="number"
-              placeholder="Guest"
+              placeholder={t.guests}
               id="guestSize"
               required
               onChange={handleChange}
@@ -138,13 +164,13 @@ const Booking = ({ tour, avgRating }) => {
             <span> ${serviceFee}</span>
           </ListGroupItem> */}
           <ListGroupItem className="border-0 px-0 total">
-            <h5>Total</h5>
+            <h5>{t.total}</h5>
             <span> ${totalAmount}</span>
           </ListGroupItem>
         </ListGroup>
 
         <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>
-          Reserve Now
+          {t.reserveNow}
         </Button>
       </div>
       {/* =============== booking bottom end ================== */}

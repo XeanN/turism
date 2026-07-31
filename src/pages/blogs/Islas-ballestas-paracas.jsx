@@ -1,6 +1,136 @@
 import React from "react";
 
-const Blog4 = () => {
+const Blog4 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Todo lo que Necesitas Saber Antes de Visitar las Islas Ballestas</h2>
+
+        <p>
+          Las <strong>Islas Ballestas</strong>, conocidas como las "pequeñas Galápagos del Perú", son uno de los destinos más espectaculares de la costa sur peruana. Ubicadas frente a las costas de Paracas, estas formaciones rocosas albergan una increíble variedad de fauna marina, historia antigua y paisajes únicos. Si estás planeando tu viaje, aquí tienes todo lo que necesitas saber para disfrutar al máximo esta experiencia inolvidable.
+        </p>
+
+        <h3>¿Qué son exactamente las Islas Ballestas?</h3>
+        <p>
+          Son un grupo de pequeñas islas e islotes rocosos que emergen del océano Pacífico, a unos 20 km de Paracas. Estas islas están deshabitadas por humanos, pero son el hogar de miles de animales marinos gracias al rico ecosistema generado por la fría Corriente de Humboldt.
+        </p>
+
+        <h3>Un Santuario de Fauna Marina</h3>
+        <p>Entre las especies que puedes observar están:</p>
+        <ul>
+          <li><strong>Pingüinos de Humboldt</strong>: las estrellas principales, fáciles de reconocer.</li>
+          <li><strong>Lobos Marinos</strong>: cientos de ellos descansando en las rocas o nadando junto a los botes.</li>
+          <li><strong>Delfines Comunes</strong>: a veces se los ve acompañando a las embarcaciones.</li>
+          <li><strong>Piqueros, Cormoranes, Pelícanos, Zarcillos, Gaviotas</strong> y muchas otras aves marinas volando alrededor de las islas en busca de alimento.</li>
+        </ul>
+
+        <p>
+          Sus aguas también están llenas de peces, crustáceos y moluscos, lo que convierte a las Islas Ballestas en uno de los ecosistemas marinos más ricos de Sudamérica.
+        </p>
+
+        <h3>El Misterio del Candelabro de Paracas</h3>
+        <p>
+          Antes de llegar a las Islas Ballestas, durante el paseo en bote, uno de los primeros atractivos es el enigmático geoglifo del <strong>Candelabro de Paracas</strong>, visible sobre las dunas de arena. Su origen exacto sigue siendo desconocido, pero existen varias teorías:
+        </p>
+        <ul>
+          <li>Algunos creen que perteneció a la cultura Paracas como símbolo astronómico o ritual.</li>
+          <li>Otros lo relacionan con antiguos navegantes, como una guía de navegación.</li>
+          <li>Incluso hay teorías esotéricas que lo vinculan con visitantes extraterrestres.</li>
+        </ul>
+        <p>Sin importar su origen, el Candelabro impresiona por su tamaño (más de 120 metros de largo) y su excelente conservación a través del tiempo.</p>
+
+        <h3>¿Cómo es el Tour a las Islas Ballestas?</h3>
+        <p>
+          <strong>Duración:</strong> Aproximadamente 2 horas.
+          <br />
+          <strong>Modalidad:</strong> Tour grupal en lanchas rápidas (12-30 pasajeros aprox).
+          <br />
+          <strong>Horarios de salida:</strong> 8:00 am, 9:00 am y 10:00 am (los mejores horarios por las condiciones del mar).
+        </p>
+
+        <p>
+          La navegación suele ser tranquila, aunque el oleaje puede variar según la temporada. Durante el recorrido, los guías brindan explicaciones detalladas en español e inglés sobre la fauna y los fenómenos naturales.
+        </p>
+
+        <h3>Mejor Época para Visitar las Islas Ballestas</h3>
+        <p>
+          Paracas disfruta de un clima desértico costero privilegiado casi todo el año. Sin embargo:
+        </p>
+        <ul>
+          <li><strong>Noviembre a abril:</strong> Días soleados, perfectos para fotos nítidas.</li>
+          <li><strong>Mayo a septiembre:</strong> Cielos algo más nublados por la neblina costera, pero los tours operan con normalidad.</li>
+        </ul>
+
+        <p>Durante temporada alta (enero-marzo y feriados nacionales), es muy recomendable reservar tus tours con anticipación para asegurar cupo.</p>
+
+        <h3>¿Se Puede Desembarcar en las Islas?</h3>
+        <p>
+          No. Por razones de conservación ambiental, está prohibido el acceso físico a las islas. Los botes bordean las formaciones rocosas, permitiendo la observación cercana de los animales sin alterar su hábitat natural.
+        </p>
+
+        <h3>¿Es Seguro el Paseo en Bote?</h3>
+        <p>
+          Sí, las empresas autorizadas siguen protocolos de seguridad estrictos:
+        </p>
+        <ul>
+          <li>Chalecos salvavidas obligatorios.</li>
+          <li>Tripulación capacitada.</li>
+          <li>Monitoreo constante de las condiciones climáticas.</li>
+        </ul>
+
+        <p>Si eres propenso al mareo, considera tomar medicación antinauseas antes del paseo.</p>
+
+        <h3>Consejos Prácticos para Disfrutar al Máximo el Tour</h3>
+        <ul>
+          <li>Lleva protector solar (incluso en días nublados).</li>
+          <li>Usa un sombrero o gorra con sujetador (el viento es constante).</li>
+          <li>Ropa ligera, pero lleva una chaqueta para el paseo en bote (puede sentirse frío sobre el agua).</li>
+          <li>Protege tu cámara o celular del rocío salino (una bolsa impermeable es muy útil).</li>
+          <li>Los mejores lugares para fotos están a los costados del bote.</li>
+        </ul>
+
+        <h3>La Importancia del Guano en la Historia Económica del Perú</h3>
+        <p>
+          Las Islas Ballestas, junto con otras islas guaneras de la costa, fueron el centro del <strong>"Boom del Guano"</strong> en el siglo XIX. Este fertilizante natural, rico en nitrógeno y fósforo, se exportó masivamente a Europa y Estados Unidos, generando uno de los mayores ingresos económicos del Perú durante décadas.
+        </p>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Es apto para niños pequeños?</strong> Sí, es un tour familiar. Sin embargo, para bebés menores de 1 año puede no ser ideal debido a las vibraciones del bote.</p>
+        <p><strong>¿Qué pasa si llueve o el clima empeora?</strong> Las autoridades portuarias suspenden los tours si el mar no es seguro. Es poco frecuente, pero puede pasar.</p>
+        <p><strong>¿Se pueden ver ballenas?</strong> Sí, durante ciertos meses (agosto-octubre) es posible avistar ballenas jorobadas migrando por la costa.</p>
+
+        <h3>¿Qué Otros Tours Combinar con las Islas Ballestas?</h3>
+        <p>
+          Al visitar las Ballestas, es ideal combinar tu día con:
+        </p>
+        <ul>
+          <li><strong>Reserva Nacional de Paracas:</strong> Playa Roja, mirador La Catedral, Playa Yumaque.</li>
+          <li><strong>Tour a Huacachina:</strong> el famoso oasis de Ica con sandboarding y buggies.</li>
+          <li><strong>Viñedos en Ica:</strong> tours de degustación de vino y pisco.</li>
+        </ul>
+
+        <h3>¿Por Qué se le Llama las "Galápagos Peruanas"?</h3>
+        <p>
+          Aunque a menor escala, las Islas Ballestas comparten características con las Islas Galápagos de Ecuador:
+        </p>
+        <ul>
+          <li>Gran diversidad de fauna marina en libertad.</li>
+          <li>Endemismo parcial en algunas especies de aves.</li>
+          <li>Paisajes rocosos erosionados por el viento y el mar.</li>
+        </ul>
+        <p>
+          Su accesibilidad desde Lima las convierte en una alternativa perfecta para vivir un santuario marino sin un viaje largo o costoso.
+        </p>
+
+        <h3>Conclusión Final</h3>
+        <p>
+          Las Islas Ballestas son verdaderamente una de las joyas naturales del Perú: accesibles, impresionantes y educativas. Ya seas amante de la naturaleza, viajero en familia o fotógrafo en busca de postales únicas, este tour superará tus expectativas.
+          Si estás en Paracas, simplemente no puedes irte sin visitar estas hermosas joyas marinas del Pacífico. 🐧🌊
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>Everything You Need to Know Before Visiting the Ballestas Islands</h2>
@@ -40,11 +170,11 @@ const Blog4 = () => {
 
       <h3>What Is the Ballestas Islands Tour Like?</h3>
       <p>
-        <strong>Duration:</strong> Approximately 2 hours.  
+        <strong>Duration:</strong> Approximately 2 hours.
         <br />
-        <strong>Mode:</strong> Group tour on speedboats (12-30 passengers approx).  
+        <strong>Mode:</strong> Group tour on speedboats (12-30 passengers approx).
         <br />
-        <strong>Departure times:</strong> 8:00 am, 9:00 am, and 10:00 am (the best times for marine weather).  
+        <strong>Departure times:</strong> 8:00 am, 9:00 am, and 10:00 am (the best times for marine weather).
       </p>
 
       <p>
@@ -123,7 +253,7 @@ const Blog4 = () => {
 
       <h3>Final Conclusion</h3>
       <p>
-        The Ballestas Islands are truly one of Peru’s natural gems—accessible, impressive, and educational. Whether you’re a nature lover, a family traveler, or a photographer seeking unique postcards, this tour will exceed your expectations.  
+        The Ballestas Islands are truly one of Peru’s natural gems—accessible, impressive, and educational. Whether you’re a nature lover, a family traveler, or a photographer seeking unique postcards, this tour will exceed your expectations.
         If you’re in Paracas, you simply can’t leave without visiting these stunning marine jewels of the Pacific. 🐧🌊
       </p>
     </div>

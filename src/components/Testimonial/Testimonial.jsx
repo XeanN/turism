@@ -5,8 +5,13 @@ import Slider from 'react-slick';
 import wendyW from '../../assets/images/wendy-w.jpg'
 import kevinK from '../../assets/images/kevin-k.JPG'
 import fernanda from '../../assets/images/fernanda.jpg'
+import { useLanguage } from "../../context/LanguageContext";
+
+const customerLabel = { en: "Customer", es: "Cliente" };
 
 const Testimonial = ()=> {
+        const lang = useLanguage();
+        const customer = customerLabel[lang];
 
         const settings={
             dots: true,
@@ -48,7 +53,7 @@ const Testimonial = ()=> {
                     <img src={wendyW} className="w-25 h-25 rounded-2" alt="Wendy W., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Wendy W.</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>
@@ -61,7 +66,7 @@ const Testimonial = ()=> {
                     <img src={kevinK} className="w-25 h-25 rounded-2" alt="Kevin K., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Kevin K.</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>
@@ -74,7 +79,7 @@ const Testimonial = ()=> {
                     <img src={fernanda} className="w-25 h-25 rounded-2" alt="FernandaGirl, cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">FernandaGirl</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +93,7 @@ const Testimonial = ()=> {
                     <img src={wendyW} className="w-25 h-25 rounded-2" alt="Wendy W., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Wendy W.</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>
@@ -101,7 +106,7 @@ const Testimonial = ()=> {
                     <img src={kevinK} className="w-25 h-25 rounded-2" alt="Kevin K., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Kevin K.</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>
@@ -114,7 +119,7 @@ const Testimonial = ()=> {
                     <img src={fernanda} className="w-25 h-25 rounded-2" alt="FernandaGirl, cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">FernandaGirl</h6>
-                        <p>Customer</p>
+                        <p>{customer}</p>
                     </div>
                 </div>
             </div>

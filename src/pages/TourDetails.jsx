@@ -10,62 +10,49 @@ import Newsletter from "../shared/Newsletter";
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
+import { findTourSeoBySlug, findTourSeoById, getTourSeoText } from "../assets/data/toursSeo";
+import { useLanguage } from "../context/LanguageContext";
 
-// Claves por id numérico del tour (coincide con /tours/:id), no por título:
-// el título llega recién cuando termina el fetch al backend, y el id ya
-// está disponible de inmediato desde la URL, así el <title>/description
-// salen correctos aunque el bot no espere a que cargue el fetch.
-const tourSeoMeta = {
-  "1": {
-    title: "FullDay Paracas and Huacachina - Aventura y Naturaleza",
-    description: "Explora Paracas e Ica en un día. Islas Ballestas, oasis de Huacachina, viñedos, historia y adrenalina en carros areneros desde Lima."
+const text = {
+  en: {
+    loading: "Loading.......",
+    notRated: "Not rated",
+    people: "people",
+    description: "Description",
+    reviews: "Reviews",
+    shareThoughts: "share your thoughts",
+    submit: "Submit",
+    noReviews: "No reviews found",
+    fallbackTitle: (title) => (title ? `${title} - Tourism in Paracas` : "Tour in Paracas - Turismo Nautico Paracas"),
+    fallbackDescription: (title) => (title ? `Discover the "${title}" tour in Paracas, full of nature and adventure.` : "Discover our tours in Paracas, full of nature and adventure."),
   },
-  "2": {
-    title: "Islas Ballestas - Fauna Marina Peruana",
-    description: "Navega a las Islas Ballestas para ver lobos marinos, pingüinos y aves exóticas en su hábitat natural."
-  },
-  "3": {
-    title: "Private Tour en Paracas - Experiencia Personalizada",
-    description: "Vive una experiencia única y exclusiva con nuestros tours privados en Paracas, Ica o Nazca."
-  },
-  "4": {
-    title: "Yacht Charter en Paracas - Lujo y Libertad",
-    description: "Alquila un yate privado y navega por las aguas de Paracas con estilo, confort y privacidad total."
-  },
-  "5": {
-    title: "Special Services en Paracas - Eventos y Servicios a Medida",
-    description: "Ofrecemos tours corporativos, filmaciones, bodas y experiencias únicas personalizadas en el mar o desierto."
-  },
-  "6": {
-    title: "Islas Ballestas y Reserva Nacional All-Inclusive - Paracas",
-    description: "Tour todo incluido: Islas Ballestas y Reserva Nacional de Paracas en una sola salida, con transporte y guía."
-  },
-  "7": {
-    title: "Tour All-Inclusive desde TPP Paracas - Islas y Reserva",
-    description: "Sal desde el Terminal Portuario de Paracas y conoce las Islas Ballestas y la Reserva Nacional en un solo tour."
-  },
-  "8": {
-    title: "Chan Chan y Trujillo desde Terminal de Cruceros Salaverry",
-    description: "Excursión cultural a Chan Chan y Trujillo para pasajeros de cruceros que llegan al Terminal de Salaverry."
-  },
-  "9": {
-    title: "Reserva Nacional de Paracas - Tour Privado",
-    description: "Conoce la biodiversidad marina y los paisajes únicos del desierto costero peruano en un tour privado por la reserva."
-  },
-  "26": {
-    title: "Nazca Lines - Misterios del Desierto",
-    description: "Vuela sobre las enigmáticas Líneas de Nazca y descubre uno de los mayores misterios de la antigüedad peruana."
-  },
-  "27": {
-    title: "Mini Buggies en Paracas - Aventura en las Dunas",
-    description: "Disfruta de la emoción del sandboarding y un recorrido en buggy por las dunas de la costa sur del Perú."
+  es: {
+    loading: "Cargando.......",
+    notRated: "Sin calificar",
+    people: "personas",
+    description: "Descripción",
+    reviews: "Reseñas",
+    shareThoughts: "comparte tu experiencia",
+    submit: "Enviar",
+    noReviews: "No se encontraron reseñas",
+    fallbackTitle: (title) => (title ? `${title} - Turismo en Paracas` : "Tour en Paracas - Turismo Nautico Paracas"),
+    fallbackDescription: (title) => (title ? `Descubre el tour "${title}" en Paracas, lleno de naturaleza y aventura.` : "Descubre nuestros tours en Paracas, llenos de naturaleza y aventura."),
   },
 };
+
 const TourDetail = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
+  const lang = useLanguage();
+  const t = text[lang];
   const reviewMsgRef = useRef("");
   const [tourRating, setTourRating] = useState(null);
   const { user } = useContext(AuthContext);
+
+  // El backend solo conoce el id numérico. Si el slug de la URL está en
+  // nuestro mapeo lo traducimos a su id; si alguien entra directo con un
+  // id numérico (link viejo, backend nuevo aún no mapeado) lo usamos tal cual.
+  const seoEntry = findTourSeoBySlug(slug) || findTourSeoById(slug);
+  const id = seoEntry ? seoEntry.id : slug;
 
   // fetch data from db
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/tour/get/${id}`);
@@ -127,13 +114,13 @@ const TourDetail = () => {
     window.scrollTo(0, 0);
   }, [tour]);
 
-  const seo = tourSeoMeta[id] || {
-    title: title ? `${title} - Turismo en Paracas` : "Tour en Paracas - Turismo Nautico Paracas",
-    description: title
-      ? `Descubre el tour "${title}" en Paracas, lleno de naturaleza y aventura.`
-      : "Descubre nuestros tours en Paracas, llenos de naturaleza y aventura."
-  };
-  const canonicalUrl = `https://turismonauticoparacas.com/tours/${id}`;
+  const seo = seoEntry
+    ? getTourSeoText(seoEntry, lang)
+    : { title: t.fallbackTitle(title), description: t.fallbackDescription(title) };
+  const tourPath = `/tours/${seoEntry ? seoEntry.slug : id}`;
+  const canonicalUrl = `https://turismonauticoparacas.com${lang === "es" ? "/es" : ""}${tourPath}`;
+  const enUrl = `https://turismonauticoparacas.com${tourPath}`;
+  const esUrl = `https://turismonauticoparacas.com/es${tourPath}`;
 
   return (
     <>
@@ -141,6 +128,9 @@ const TourDetail = () => {
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
         <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" hrefLang="en" href={enUrl} />
+        <link rel="alternate" hrefLang="es" href={esUrl} />
+        <link rel="alternate" hrefLang="x-default" href={enUrl} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
         <meta property="og:type" content="product" />
@@ -150,7 +140,7 @@ const TourDetail = () => {
       </Helmet>
       <section>
         <Container>
-          {loading && <h4 className="text-center pt-5">Loading.......</h4>}
+          {loading && <h4 className="text-center pt-5">{t.loading}</h4>}
           {error && <h4 className="text-center pt-5">{error}</h4>}
           {!loading && !error && (
             <Row>
@@ -168,7 +158,7 @@ const TourDetail = () => {
                         ></i>{" "}
                         {avgRating === 0 ? null : avgRating}
                         {totalRating === 0 ? (
-                          "Not rated"
+                          t.notRated
                         ) : (
                           <span>({reviews?.length})</span>
                         )}
@@ -191,10 +181,10 @@ const TourDetail = () => {
                         <i className="ri-map-pin-time-line"></i> {distance} k/m
                       </span>
                       <span>
-                        <i className="ri-group-line"></i> {maxGroupSize} people
+                        <i className="ri-group-line"></i> {maxGroupSize} {t.people}
                       </span>
                     </div>
-                    <h5>Description</h5>
+                    <h5>{t.description}</h5>
                     <p>{desc}</p>
                     <div dangerouslySetInnerHTML={{ __html: informacion }} />
                     {/*RESERVA  PARACAS*/}
@@ -296,7 +286,7 @@ const TourDetail = () => {
                   </div>
                   {/* =========== tour reviews section ==============*/}
                   <div className="tour__reviews mt-4">
-                    <h4>Reviews ({reviews?.length} reviews)</h4>
+                    <h4>{t.reviews} ({reviews?.length})</h4>
                     <Form onSubmit={submitHandler}>
                       <div className="d-flex align-items-center gap-3 mb-4 rating__group">
                         <span onClick={() => setTourRating(1)}>
@@ -320,21 +310,21 @@ const TourDetail = () => {
                         <input
                           type="text"
                           ref={reviewMsgRef}
-                          placeholder="share your thoughts"
+                          placeholder={t.shareThoughts}
                           required
                         />
                         <button
                           className="btn primary__btn text-white"
                           type="submit"
                         >
-                          Submit
+                          {t.submit}
                         </button>
                       </div>
                     </Form>
 
                     <ListGroup className="user__reviews">
                       {reviews > 0 ? (
-                        <h4 className="text-center">No reviews found</h4>
+                        <h4 className="text-center">{t.noReviews}</h4>
                       ) : (
                         reviews?.map((review) => (
                           <div className="review__item" key={review.id}>

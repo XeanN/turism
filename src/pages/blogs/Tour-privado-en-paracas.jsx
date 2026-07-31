@@ -1,6 +1,150 @@
 import React from "react";
 
-const Blog5 = () => {
+const Blog5 = ({ lang }) => {
+  if (lang === "es") {
+    return (
+      <div className="blog-content">
+        <h2>Tour Privado en Paracas: Exclusividad a tu Medida</h2>
+
+        <p>
+          ¿Buscas una experiencia única, alejada de las multitudes y diseñada completamente a tu propio ritmo? El <strong>Tour Privado en Paracas</strong> es la opción ideal para quienes quieren disfrutar de la belleza natural de este destino peruano con comodidad, flexibilidad y total personalización. Aquí te contamos por qué esta experiencia privada es mucho más que un simple recorrido turístico.
+        </p>
+
+        <h3>¿Por Qué Elegir un Tour Privado?</h3>
+        <p>
+          A diferencia de los tours grupales tradicionales, el tour privado en Paracas ofrece:
+        </p>
+        <ul>
+          <li><strong>Control total del itinerario:</strong> puedes decidir los horarios de salida, las actividades específicas e incluso la duración de cada parada.</li>
+          <li><strong>Atención personalizada:</strong> tendrás un guía dedicado para ti, tu pareja, familia o amigos, adaptado a tus intereses.</li>
+          <li><strong>Privacidad total:</strong> sin compartir espacio con desconocidos ni seguir horarios estrictos de grupo.</li>
+          <li><strong>Mayor comodidad:</strong> ideal para familias con niños pequeños, personas mayores o grupos VIP que buscan un servicio exclusivo.</li>
+        </ul>
+
+        <h3>¿Qué Incluye un Tour Privado Típico en Paracas?</h3>
+        <p>El itinerario puede personalizarse por completo, pero los paquetes más populares suelen incluir:</p>
+
+        <h4>✅ Paseo Privado en Bote a las Islas Ballestas</h4>
+        <p>
+          Partiendo desde el muelle de Paracas, tu bote exclusivo te llevará a recorrer las <strong>Islas Ballestas</strong>. Tendrás más espacio, tiempo y libertad para detenerte en cada punto destacado:
+        </p>
+        <ul>
+          <li>Pingüinos de Humboldt</li>
+          <li>Grandes colonias de Lobos Marinos</li>
+          <li>El impresionante geoglifo del <strong>Candelabro</strong></li>
+          <li>Formaciones rocosas únicas para fotografiar</li>
+        </ul>
+
+        <h4>✅ Visita Personalizada a la Reserva Nacional de Paracas</h4>
+        <p>
+          A bordo de un vehículo privado con un guía especializado, explorarás los puntos clave de la Reserva Nacional de Paracas a tu propio ritmo:
+        </p>
+        <ul>
+          <li>Playa Roja</li>
+          <li>Mirador de La Catedral</li>
+          <li>Bahía de Lagunillas (parada opcional para almorzar)</li>
+          <li>Playa Yumaque</li>
+        </ul>
+
+        <h4>✅ Extensión Opcional a Ica para un Día Completo</h4>
+        <p>
+          Muchos turistas extienden su tour privado para incluir la región de Ica, con:
+        </p>
+        <ul>
+          <li>Visitas a viñedos artesanales de pisco y vino</li>
+          <li>Degustaciones exclusivas con explicaciones guiadas</li>
+          <li>Tour a Huacachina con buggies y sandboarding</li>
+        </ul>
+
+        <h3>Ventajas de un Tour Privado frente a un Tour Grupal</h3>
+        <ul>
+          <li><strong>Flexibilidad total:</strong> haz paradas extra para fotos, avistamientos prolongados o descansos sin presión.</li>
+          <li><strong>Acceso VIP:</strong> perfecto para celebraciones especiales (cumpleaños, aniversarios, lunas de miel, pedidas de mano).</li>
+          <li><strong>Guía dedicado:</strong> adaptado según los intereses de los viajeros: naturaleza, historia, fotografía, gastronomía o aventura.</li>
+          <li><strong>Experiencia exclusiva:</strong> tus fotos, momentos y recuerdos pertenecerán únicamente a tu grupo.</li>
+        </ul>
+
+        <h3>¿Quién Suele Reservar Tours Privados?</h3>
+        <p>Este tipo de tour es especialmente popular entre:</p>
+        <ul>
+          <li>Parejas celebrando ocasiones especiales.</li>
+          <li>Familias con niños pequeños (evitando el estrés de grupos grandes).</li>
+          <li>Viajeros mayores que buscan un ritmo más lento y cómodo.</li>
+          <li>Fotógrafos profesionales que necesitan tiempo para las tomas perfectas de fauna.</li>
+          <li>Grupos VIP, ejecutivos corporativos o visitantes de alto perfil.</li>
+        </ul>
+
+        <h3>Logística Importante</h3>
+        <ul>
+          <li>Las reservas deben hacerse con anticipación, especialmente en temporada alta (Semana Santa, feriados nacionales, Año Nuevo).</li>
+          <li>Capacidad de hasta 29 pasajeros por bote privado.</li>
+          <li>Horarios de salida flexibles (generalmente entre 7:00 a.m. y 1:00 p.m.).</li>
+          <li>Todos los permisos, tasas portuarias y guías oficiales están incluidos.</li>
+        </ul>
+
+        <h3>Recomendaciones Prácticas para el Tour Privado</h3>
+        <ul>
+          <li>Lleva una cámara profesional, binoculares y protector solar.</li>
+          <li>Opta por una salida temprana para mejores condiciones marinas.</li>
+          <li>Solicita snacks o catering a bordo para mayor comodidad (disponible con arreglo previo).</li>
+          <li>Usa ropa ligera pero abrigadora para el paseo en bote (el viento del Pacífico puede ser frío).</li>
+        </ul>
+
+        <h3>Preguntas Frecuentes (FAQ)</h3>
+        <p><strong>¿Puedo personalizar completamente el itinerario?</strong> Sí, dentro de las posibilidades técnicas y de tiempo, puede adaptarse totalmente a tus preferencias.</p>
+        <p><strong>¿Hay restricciones de edad?</strong> No, los tours privados son aptos para todas las edades.</p>
+        <p><strong>¿Incluye guías bilingües?</strong> Sí, se asignan guías en español e inglés según las necesidades del grupo.</p>
+        <p><strong>¿Podemos solicitar apoyo para fotografía o filmación profesional?</strong> Por supuesto. Con aviso previo, se puede coordinar asistencia para producción audiovisual, incluyendo permisos especiales de SERNANP si se requieren.</p>
+
+        <h3>💡 ¿Realmente Vale la Pena Pagar por un Tour Privado?</h3>
+        <p>
+          Absolutamente. Aunque es más costoso que un tour grupal, la experiencia es incomparable. Si buscas tranquilidad, exclusividad, servicio personalizado y libertad de tiempo, un tour privado en Paracas es una inversión garantizada.
+        </p>
+
+        <h3>Comparación Rápida: Grupal vs Privado</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Tour Grupal</th>
+              <th>Tour Privado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Horario</td>
+              <td>Fijo</td>
+              <td>Flexible</td>
+            </tr>
+            <tr>
+              <td>Espacio Personal</td>
+              <td>Limitado</td>
+              <td>Amplio</td>
+            </tr>
+            <tr>
+              <td>Duración Total</td>
+              <td>Preestablecida</td>
+              <td>Ajustable</td>
+            </tr>
+            <tr>
+              <td>Atención del Guía</td>
+              <td>Compartida</td>
+              <td>100% Dedicada</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Conclusión Final</h3>
+        <p>
+          Si quieres vivir <strong>lo mejor de Paracas de forma exclusiva, cómoda, sin apuros y totalmente a tu medida</strong>, el tour privado es la mejor opción.
+          Ya sea para un viaje romántico, unas vacaciones familiares, fotografía profesional o una experiencia VIP, este formato convierte cada momento en un recuerdo duradero.
+          Explora <strong>las Islas Ballestas, la Reserva Nacional y Huacachina</strong> a tu propio ritmo, evitando multitudes y disfrutando cada paisaje como si fuera tu paraíso privado.
+          <strong>Reservar con anticipación es clave para asegurar disponibilidad.</strong> 🚤🌊📸
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="blog-content">
       <h2>Private Tour in Paracas: Tailored Exclusivity</h2>
@@ -135,9 +279,9 @@ const Blog5 = () => {
 
       <h3>Final Conclusion</h3>
       <p>
-        If you want to experience <strong>the best of Paracas exclusively, comfortably, without rushing, and fully tailored to you</strong>, the private tour is the superior option.  
-        Whether for a romantic trip, family vacation, professional photography, or VIP experience, this format turns every moment into a lasting memory.  
-        Explore <strong>Ballestas Islands, the National Reserve, and Huacachina</strong> at your own pace, avoiding crowds and enjoying each landscape as if it were your private paradise.  
+        If you want to experience <strong>the best of Paracas exclusively, comfortably, without rushing, and fully tailored to you</strong>, the private tour is the superior option.
+        Whether for a romantic trip, family vacation, professional photography, or VIP experience, this format turns every moment into a lasting memory.
+        Explore <strong>Ballestas Islands, the National Reserve, and Huacachina</strong> at your own pace, avoiding crowds and enjoying each landscape as if it were your private paradise.
         <strong>Advance booking is key to secure availability.</strong> 🚤🌊📸
       </p>
     </div>
