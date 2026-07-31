@@ -11,7 +11,7 @@ const MasonryImagesGallery = () => {
             className="masonry__img"
             src={item}
             key={index}
-            alt=""
+            alt={`Foto de tour en Paracas ${index + 1}`}
             style={{ width: "100%", display: "block", borderRadius: "10px" }}
           />
         ))}

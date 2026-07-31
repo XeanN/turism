@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import CommonSection from "../shared/CommonSection";
 
 import "../styles/tours.css";
@@ -33,6 +34,21 @@ const Tours = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Todos los Tours en Paracas | Turismo Nautico Paracas</title>
+        <meta
+          name="description"
+          content="Descubre todos nuestros tours en Paracas: Islas Ballestas, Reserva Nacional, Nazca, yates privados y más. Reserva tu aventura en la costa sur del Perú."
+        />
+        <link rel="canonical" href="https://turismonauticoparacas.com/tours" />
+        <meta property="og:title" content="Todos los Tours en Paracas" />
+        <meta
+          property="og:description"
+          content="Islas Ballestas, Reserva Nacional de Paracas, Nazca y más tours disponibles."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://turismonauticoparacas.com/tours" />
+      </Helmet>
       <CommonSection title={"All Tours"} />
       <section>
         <Container>

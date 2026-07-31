@@ -51,6 +51,22 @@ const BlogDetails = () => {
         <meta name="description" content={blog.summary} />
         <meta name="author" content={blog.author} />
         <meta name="keywords" content={blog.category} />
+        <link
+          rel="canonical"
+          href={`https://turismonauticoparacas.com/blogs/${blog.slug}`}
+        />
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.summary} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={`https://turismonauticoparacas.com/blogs/${blog.slug}`}
+        />
+        <meta
+          property="og:image"
+          content={`https://turismonauticoparacas.com${blog.image}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <CommonSection title={blog.title} />

@@ -2,57 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://turismonauticoparacas.com</loc>
+    <loc>https://turismonauticoparacas.com/home</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/full-day-paracas-and-huacachina</loc>
+    <loc>https://turismonauticoparacas.com/tours</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/dune-buggy-and-sandboard</loc>
+    <loc>https://turismonauticoparacas.com/tours/1</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/paracas-national-reserve</loc>
-    <priority>0.8</priority>
+    <loc>https://turismonauticoparacas.com/tours/2</loc>
+    <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/islas-ballestas</loc>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://turismonauticoparacas.com/tours/private-tour</loc>
+    <loc>https://turismonauticoparacas.com/tours/3</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/yacht-charter</loc>
+    <loc>https://turismonauticoparacas.com/tours/4</loc>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/special-services</loc>
+    <loc>https://turismonauticoparacas.com/tours/5</loc>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
   </url>
 
   <url>
-    <loc>https://turismonauticoparacas.com/tours/nazca-lines</loc>
+    <loc>https://turismonauticoparacas.com/tours/6</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/7</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/8</loc>
     <priority>0.6</priority>
     <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/9</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/26</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/tours/27</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/about</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/contact</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/gallery</loc>
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/what-to-see-in-paracas-in-one-day</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/sandboarding-and-buggy-in-paracas</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/paracas-national-reserve</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/ballestas-islands-paracas</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/private-tour-in-paracas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/yacht-charter-in-paracas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/special-services-in-paracas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/nazca-lines-from-paracas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/marine-fauna-in-paracas</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/nazca-lines-from-pisco</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/montesierpe</loc>
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://turismonauticoparacas.com/blogs/guano-collectors</loc>
+    <priority>0.4</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
 </urlset>

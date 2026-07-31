@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "../styles/home.css";
 
 import { Container, Row, Col } from "reactstrap";
@@ -40,8 +41,42 @@ const Home = () => {
     setCurrentIndex(index);
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    name: "Turismo Nautico Paracas",
+    image: "https://turismonauticoparacas.com/extras.png",
+    url: "https://turismonauticoparacas.com/home",
+    telephone: "+51-956-481-002",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: 'A.H. Alberto Tataje Muñoz Mz "C" Lote 2',
+      addressLocality: "Paracas",
+      addressCountry: "PE",
+    },
+    areaServed: "Paracas, Peru",
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Turismo Nautico Paracas | Tours en Islas Ballestas, Reserva y Nazca</title>
+        <meta
+          name="description"
+          content="Agencia de turismo en Paracas: tours a Islas Ballestas, Reserva Nacional de Paracas, sandboarding en Huacachina, yates privados y sobrevuelo a las Líneas de Nazca."
+        />
+        <link rel="canonical" href="https://turismonauticoparacas.com/home" />
+        <meta property="og:title" content="Turismo Nautico Paracas" />
+        <meta
+          property="og:description"
+          content="Tours a Islas Ballestas, Reserva Nacional de Paracas, sandboarding y yates privados en la costa sur del Perú."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://turismonauticoparacas.com/home" />
+        <meta property="og:image" content="https://turismonauticoparacas.com/extras.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
       {/* ================hero section start==================== */}
       <section className="home-home">
         {/*<div className="overlay"></div>{/*
@@ -52,7 +87,11 @@ const Home = () => {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {sliderImages.map((img, idx) => (
-              <img src={img} alt={`Slide ${idx}`} key={idx} />
+              <img
+                src={img}
+                alt={`Tour en Paracas - vista ${idx + 1}`}
+                key={idx}
+              />
             ))}
           </div>
           {/* ✅ Indicadores de burbujas */}
@@ -188,7 +227,7 @@ const Home = () => {
 
             <Col lg="6">
               <div className="experience__img">
-                <img src={experienceImg} alt="" />
+                <img src={experienceImg} alt="Tripulación de Turismo Nautico Paracas navegando" />
               </div>
             </Col>
           </Row>

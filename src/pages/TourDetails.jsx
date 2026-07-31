@@ -11,39 +11,55 @@ import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
 
+// Claves por id numérico del tour (coincide con /tours/:id), no por título:
+// el título llega recién cuando termina el fetch al backend, y el id ya
+// está disponible de inmediato desde la URL, así el <title>/description
+// salen correctos aunque el bot no espere a que cargue el fetch.
 const tourSeoMeta = {
-  "FullDay Paracas and Huacachina": {
+  "1": {
     title: "FullDay Paracas and Huacachina - Aventura y Naturaleza",
     description: "Explora Paracas e Ica en un día. Islas Ballestas, oasis de Huacachina, viñedos, historia y adrenalina en carros areneros desde Lima."
   },
-  "Dune Buggy & Sandboard": {
-    title: "Dune Buggy & Sandboard - Aventura en las dunas de Ica",
-    description: "Disfruta de la emoción del sandboarding y un recorrido en buggy por las gigantescas dunas de Huacachina."
-  },
-  "Paracas National Reserve": {
-    title: "Reserva Nacional de Paracas - Naturaleza y Cultura",
-    description: "Conoce la biodiversidad marina y paisajes únicos del desierto costero peruano en esta reserva natural."
-  },
-  "Islas Ballestas": {
+  "2": {
     title: "Islas Ballestas - Fauna Marina Peruana",
     description: "Navega a las Islas Ballestas para ver lobos marinos, pingüinos y aves exóticas en su hábitat natural."
   },
-  "Private Tour": {
-    title: "Private Tour - Experiencia Personalizada",
+  "3": {
+    title: "Private Tour en Paracas - Experiencia Personalizada",
     description: "Vive una experiencia única y exclusiva con nuestros tours privados en Paracas, Ica o Nazca."
   },
-  "Yacht Charter": {
+  "4": {
     title: "Yacht Charter en Paracas - Lujo y Libertad",
     description: "Alquila un yate privado y navega por las aguas de Paracas con estilo, confort y privacidad total."
   },
-  "Special Services": {
-    title: "Special Services - Eventos y Servicios a Medida",
+  "5": {
+    title: "Special Services en Paracas - Eventos y Servicios a Medida",
     description: "Ofrecemos tours corporativos, filmaciones, bodas y experiencias únicas personalizadas en el mar o desierto."
   },
-  "Nazca Lines": {
+  "6": {
+    title: "Islas Ballestas y Reserva Nacional All-Inclusive - Paracas",
+    description: "Tour todo incluido: Islas Ballestas y Reserva Nacional de Paracas en una sola salida, con transporte y guía."
+  },
+  "7": {
+    title: "Tour All-Inclusive desde TPP Paracas - Islas y Reserva",
+    description: "Sal desde el Terminal Portuario de Paracas y conoce las Islas Ballestas y la Reserva Nacional en un solo tour."
+  },
+  "8": {
+    title: "Chan Chan y Trujillo desde Terminal de Cruceros Salaverry",
+    description: "Excursión cultural a Chan Chan y Trujillo para pasajeros de cruceros que llegan al Terminal de Salaverry."
+  },
+  "9": {
+    title: "Reserva Nacional de Paracas - Tour Privado",
+    description: "Conoce la biodiversidad marina y los paisajes únicos del desierto costero peruano en un tour privado por la reserva."
+  },
+  "26": {
     title: "Nazca Lines - Misterios del Desierto",
     description: "Vuela sobre las enigmáticas Líneas de Nazca y descubre uno de los mayores misterios de la antigüedad peruana."
-  }
+  },
+  "27": {
+    title: "Mini Buggies en Paracas - Aventura en las Dunas",
+    description: "Disfruta de la emoción del sandboarding y un recorrido en buggy por las dunas de la costa sur del Perú."
+  },
 };
 const TourDetail = () => {
   const { id } = useParams();
@@ -111,16 +127,26 @@ const TourDetail = () => {
     window.scrollTo(0, 0);
   }, [tour]);
 
-  const seo = tourSeoMeta[title] || {
-    title: `${title} - Turismo en Paracas`,
-    description: `Descubre el tour "${title}" en Paracas, lleno de naturaleza y aventura.`
+  const seo = tourSeoMeta[id] || {
+    title: title ? `${title} - Turismo en Paracas` : "Tour en Paracas - Turismo Nautico Paracas",
+    description: title
+      ? `Descubre el tour "${title}" en Paracas, lleno de naturaleza y aventura.`
+      : "Descubre nuestros tours en Paracas, llenos de naturaleza y aventura."
   };
+  const canonicalUrl = `https://turismonauticoparacas.com/tours/${id}`;
 
   return (
     <>
       <Helmet>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content={canonicalUrl} />
+        {photo && <meta property="og:image" content={BASE_URL + photo} />}
+        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <section>
         <Container>
@@ -130,7 +156,7 @@ const TourDetail = () => {
             <Row>
               <Col lg="8">
                 <div className="tour__content">
-                  <img src={BASE_URL + photo} alt="" />
+                  <img src={BASE_URL + photo} alt={title || "Tour en Paracas"} />
 
                   <div className="tour__info">
                     <h2>{title}</h2>
@@ -312,7 +338,7 @@ const TourDetail = () => {
                       ) : (
                         reviews?.map((review) => (
                           <div className="review__item" key={review.id}>
-                            <img src={avatar} alt="" />
+                            <img src={avatar} alt={`Foto de perfil de ${review.username}`} />
 
                             <div className="w-100">
                               <div className="d-flex align-items-center justify-content-between">

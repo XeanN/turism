@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import CommonSection from "../shared/CommonSection";
 import "../styles/contact.css";
 import emailjs from "@emailjs/browser";
@@ -48,6 +49,21 @@ const Contact = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Contáctanos | Turismo Nautico Paracas</title>
+        <meta
+          name="description"
+          content="Contáctanos para reservar tu tour en Paracas. Oficina en Bahía de Paracas, atención por WhatsApp y correo. Te ayudamos a armar tu itinerario ideal."
+        />
+        <link rel="canonical" href="https://turismonauticoparacas.com/contact" />
+        <meta property="og:title" content="Contáctanos - Turismo Nautico Paracas" />
+        <meta
+          property="og:description"
+          content="Escríbenos para reservar tu tour en Paracas: Islas Ballestas, Reserva Nacional, Nazca y más."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://turismonauticoparacas.com/contact" />
+      </Helmet>
       <CommonSection title="Contact Us, We’re here to Help! Our Team Would Love to Answer Your Questions" />
       <section className="contact">
         <div className="container contact-container">

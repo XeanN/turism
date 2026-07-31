@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col } from 'reactstrap';
 import CommonSection from "../shared/CommonSection";
 import Newsletter from './../shared/Newsletter'
@@ -17,6 +18,21 @@ import positiva from '../assets/images/about/laPositiva.jpg';
 
 const About = ()=> {
     return <section>
+         <Helmet>
+            <title>Sobre Nosotros | Turismo Nautico Paracas</title>
+            <meta
+              name="description"
+              content="Conoce a Turismo Nautico Paracas: agencia local con más de 20 años de experiencia, administradores directos de embarcaciones turísticas en Paracas, Perú."
+            />
+            <link rel="canonical" href="https://turismonauticoparacas.com/about" />
+            <meta property="og:title" content="Sobre Nosotros - Turismo Nautico Paracas" />
+            <meta
+              property="og:description"
+              content="Agencia local y operador turístico en Paracas, Perú, con más de 20 años de experiencia."
+            />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://turismonauticoparacas.com/about" />
+         </Helmet>
          <CommonSection title={'About Us'}/>
         <div className="about-container">
             <Container>
@@ -99,27 +115,27 @@ const About = ()=> {
                                 <div className="certificate-info col-md-8 col-sm-12 white">
                                     <div className="bg-imgs white tour-image ">
                                         <div>
-                                            <img src={laguna} alt="" />
+                                            <img src={laguna} alt="Laguna en Paracas, Perú" />
                                         </div>
                                         <div>
-                                            <img src={south} alt="" />
+                                            <img src={south} alt="Turismo Nautico Paracas, agencia de turismo en Sudamérica" />
                                         </div>
                                         <div >
-                                            <img src={yate} alt="" />
+                                            <img src={yate} alt="Yate turístico de Turismo Nautico Paracas" />
                                         </div>
                                     </div>
                                     <div className="cert-imgs ">
                                         <div className="certs white">
-                                            <img src={protection} alt="" />
+                                            <img src={protection} alt="Certificado de protección ambiental" />
                                         </div>
                                         <div className="certs">
-                                            <img src={tripadvisor} alt="" />
+                                            <img src={tripadvisor} alt="Certificado de excelencia Tripadvisor" />
                                         </div>
                                         <div className="certs">
-                                            <img src={ultralow} alt="" />
+                                            <img src={ultralow} alt="Certificado de emisiones ultra bajas EPA" />
                                         </div>
                                         <div className="certs">
-                                            <img src={positiva} alt="" />
+                                            <img src={positiva} alt="Seguro La Positiva" />
                                         </div>
                                     </div>
                                     <p>

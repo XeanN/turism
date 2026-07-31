@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import CommonSection from "../shared/CommonSection";
@@ -15,6 +16,17 @@ const Gallery = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Galería de Fotos | Turismo Nautico Paracas</title>
+        <meta
+          name="description"
+          content="Mira las mejores fotos de nuestros tours en Paracas: Islas Ballestas, dunas de Huacachina, yates y clientes disfrutando la costa sur del Perú."
+        />
+        <link rel="canonical" href="https://turismonauticoparacas.com/gallery" />
+        <meta property="og:title" content="Galería de Fotos - Turismo Nautico Paracas" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://turismonauticoparacas.com/gallery" />
+      </Helmet>
       <CommonSection title="Our best moments" />
       <section className="gallery">
         <div className="container gallery-grid">

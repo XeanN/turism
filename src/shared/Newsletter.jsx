@@ -25,7 +25,7 @@ const Newsletter = () => {
 
           <Col lg="6">
             <div className="newsletter__img">
-              <img src={maleTourist} alt="" />
+              <img src={maleTourist} alt="Turista disfrutando su viaje con Turismo Nautico Paracas" />
             </div>
           </Col>
         </Row>

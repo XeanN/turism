@@ -58,12 +58,12 @@ const Login = () => {
           <Col lg="8" className="m-auto">
             <div className="login__container d-flex justify-content-between">
               <div className="login__img">
-                <img src={loginImg} alt="" />
+                <img src={loginImg} alt="Ilustración de inicio de sesión" />
               </div>
 
               <div className="login__form">
                 <div className="user">
-                  <img src={userIcon} alt="" />
+                  <img src={userIcon} alt="Ícono de usuario" />
                 </div>
                 <h2>Login</h2>
 

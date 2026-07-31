@@ -45,7 +45,7 @@ const Testimonial = ()=> {
                 Several of us off the Volendam arranged for a tour out to the Ballestas Island and Paracas Reserve-we had a wonderful trip. The company is friendly and professional to deal with and exceeded all our expectations. The boat ride out and around the islands was great and the Pisco Sour to follow afterwards was even better.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={wendyW} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={wendyW} className="w-25 h-25 rounded-2" alt="Wendy W., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Wendy W.</h6>
                         <p>Customer</p>
@@ -58,7 +58,7 @@ const Testimonial = ()=> {
                 We booked a trip to the " Band of Holes" and Tambo Colorado with Lucio and it was amazing! Our guide Diego showed up ahead of time and totally wowed my wife and I with his knowledge and enthusiasm for both areas. We highly recommend Lucio and Diego for any of your adventures in Peru.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={kevinK} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={kevinK} className="w-25 h-25 rounded-2" alt="Kevin K., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Kevin K.</h6>
                         <p>Customer</p>
@@ -71,7 +71,7 @@ const Testimonial = ()=> {
                 We were on a cruise ship and took the Ballestas Islands and Paracas Nature Reserve tours with this company. Liz was our guide and she was very good. They picked us up at the harbor and it was very convenient. Our group was on our own boat for the ride to and around the Ballestas Islands.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={fernanda} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={fernanda} className="w-25 h-25 rounded-2" alt="FernandaGirl, cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">FernandaGirl</h6>
                         <p>Customer</p>
@@ -85,7 +85,7 @@ const Testimonial = ()=> {
                 Several of us off the Volendam arranged for a tour out to the Ballestas Island and Paracas Reserve-we had a wonderful trip. The company is friendly and professional to deal with and exceeded all our expectations. The boat ride out and around the islands was great and the Pisco Sour to follow afterwards was even better.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={wendyW} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={wendyW} className="w-25 h-25 rounded-2" alt="Wendy W., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Wendy W.</h6>
                         <p>Customer</p>
@@ -98,7 +98,7 @@ const Testimonial = ()=> {
                 We booked a trip to the " Band of Holes" and Tambo Colorado with Lucio and it was amazing! Our guide Diego showed up ahead of time and totally wowed my wife and I with his knowledge and enthusiasm for both areas. We highly recommend Lucio and Diego for any of your adventures in Peru.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={kevinK} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={kevinK} className="w-25 h-25 rounded-2" alt="Kevin K., cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">Kevin K.</h6>
                         <p>Customer</p>
@@ -111,7 +111,7 @@ const Testimonial = ()=> {
                 We were on a cruise ship and took the Ballestas Islands and Paracas Nature Reserve tours with this company. Liz was our guide and she was very good. They picked us up at the harbor and it was very convenient. Our group was on our own boat for the ride to and around the Ballestas Islands.
                 </p>
                 <div className="d-flex align-items-center-gap-4 mt-3">
-                    <img src={fernanda} className="w-25 h-25 rounded-2" alt="" />
+                    <img src={fernanda} className="w-25 h-25 rounded-2" alt="FernandaGirl, cliente de Turismo Nautico Paracas" />
                     <div>
                         <h6 className="mb-0 mt-3">FernandaGirl</h6>
                         <p>Customer</p>
