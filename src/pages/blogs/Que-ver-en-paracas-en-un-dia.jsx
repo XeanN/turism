@@ -20,7 +20,7 @@ const Blog1 = ({ lang }) => {
           La mayoría de los tours de día completo salen de Lima alrededor de las 4:30 a.m. Este inicio temprano permite aprovechar al máximo la luz del día y evitar el tráfico pesado de la ciudad. Si ya te estás hospedando en Paracas, tu día comienza de manera más relajada.
         </p>
 
-        <h3>1️⃣ Paseo en bote a las <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Islas Ballestas</a></h3>
+        <h3>1️⃣ Paseo en bote a las <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Islas Ballestas</a></h3>
         <p>
           La primera parada es el muelle de El Chaco, donde abordarás un bote rumbo a las Islas Ballestas, conocidas como "las pequeñas Galápagos del Perú". Durante este paseo en bote de aproximadamente 2 horas, encontrarás:
         </p>
@@ -112,7 +112,7 @@ const Blog1 = ({ lang }) => {
         Most full-day tours depart from Lima around 4:30 a.m. This early start allows you to take full advantage of daylight and avoid heavy city traffic. If you are already staying in Paracas, your day starts more relaxed.
       </p>
 
-      <h3>1️⃣ Boat Tour to <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Ballestas Islands</a></h3>
+      <h3>1️⃣ Boat Tour to <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Ballestas Islands</a></h3>
       <p>
         The first stop is El Chaco pier, where you’ll board a boat heading to the Ballestas Islands, often referred to as "the little Galapagos of Peru." During this approximately 2-hour boat ride, you’ll encounter:
       </p>

@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col, Form, FormGroup, Button } from "reactstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/login.css";
@@ -61,6 +62,9 @@ const Login = () => {
 
   return (
     <section>
+      <Helmet>
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <Container>
         <Row>
           <Col lg="8" className="m-auto">

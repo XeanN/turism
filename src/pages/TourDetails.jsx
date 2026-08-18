@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useContext } from "react";
 import { Helmet } from "react-helmet";
 import "../styles/tour-details.css";
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import calculateAvgRating from "./../utils/avgRating";
 import avatar from "../assets/images/avatar.jpg";
 import Booking from "../components/Booking/Booking";
@@ -11,7 +11,7 @@ import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
 import { AuthContext } from "./../context/AuthContext";
 import { findTourSeoBySlug, findTourSeoById, getTourSeoText } from "../assets/data/toursSeo";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage, withLang } from "../context/LanguageContext";
 
 const text = {
   en: {
@@ -113,6 +113,13 @@ const TourDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [tour]);
+
+  // Alguien entró con el id numérico viejo (ej. /tours/4 en vez de
+  // /tours/yacht-charter-paracas): redirige a la URL con slug para no
+  // repartir señales de SEO entre dos URLs del mismo tour.
+  if (seoEntry && slug !== seoEntry.slug) {
+    return <Navigate to={withLang(`/tours/${seoEntry.slug}`, lang)} replace />;
+  }
 
   const seo = seoEntry
     ? getTourSeoText(seoEntry, lang)

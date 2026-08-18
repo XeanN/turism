@@ -27,7 +27,7 @@ const Blog9 = ({ lang }) => {
         <h3>🦭 Lobos Marinos: Los reyes de las islas</h3>
 
         <p>
-          Los lobos marinos de Paracas (Otaria flavescens) son una de las estrellas de cualquier tour por las <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Islas Ballestas</a>. Puedes verlos descansando sobre las rocas, nadando cerca de las embarcaciones o peleando juguetonamente entre ellos.
+          Los lobos marinos de Paracas (Otaria flavescens) son una de las estrellas de cualquier tour por las <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Islas Ballestas</a>. Puedes verlos descansando sobre las rocas, nadando cerca de las embarcaciones o peleando juguetonamente entre ellos.
         </p>
 
         <p>
@@ -127,7 +127,7 @@ const Blog9 = ({ lang }) => {
         </p>
 
         <p>
-          En <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Turismo Náutico Paracas</a> contamos con salidas diarias, guías expertos en interpretación de fauna marina y embarcaciones cómodas y seguras.
+          En <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Turismo Náutico Paracas</a> contamos con salidas diarias, guías expertos en interpretación de fauna marina y embarcaciones cómodas y seguras.
         </p>
 
         <h3>✅ Consejos para disfrutar al máximo tu tour de fauna marina:</h3>
@@ -181,7 +181,7 @@ const Blog9 = ({ lang }) => {
       <h3>🦭 Sea Lions: The Kings of the Islands</h3>
 
       <p>
-        Paracas sea lions (Otaria flavescens) are one of the stars of any tour to the <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Ballestas Islands</a>. You can see them resting on the rocks, swimming near the boats, or playfully fighting among themselves.
+        Paracas sea lions (Otaria flavescens) are one of the stars of any tour to the <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Ballestas Islands</a>. You can see them resting on the rocks, swimming near the boats, or playfully fighting among themselves.
       </p>
 
       <p>
@@ -281,7 +281,7 @@ const Blog9 = ({ lang }) => {
       </p>
 
       <p>
-        At <a href="https://turismonauticoparacas.com/tours/4" target="_blank" rel="noopener noreferrer">Turismo Náutico Paracas</a> we have daily departures, expert guides in marine wildlife interpretation, and comfortable, safe boats.
+        At <a href="https://turismonauticoparacas.com/tours/islas-ballestas" target="_blank" rel="noopener noreferrer">Turismo Náutico Paracas</a> we have daily departures, expert guides in marine wildlife interpretation, and comfortable, safe boats.
       </p>
 
       <h3>✅ Tips to Fully Enjoy Your Marine Wildlife Tour:</h3>
