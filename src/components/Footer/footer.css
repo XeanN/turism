@@ -24,6 +24,10 @@
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.1rem;
+    transition: color 0.2s ease-in-out;
+}
+.footer__quick-links li a:hover{
+    color: var(--secondary-color);
 }
 .footer__quick-links h6 span i{
     color: var(--secondary-color);
